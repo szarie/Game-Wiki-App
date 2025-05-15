@@ -1,0 +1,165 @@
+{
+  "agents": [
+    {
+      "id": "1",
+      "name": "Hoshimi Miyabi",
+      "image": "assets/icons/miyabi_icon.png",
+      "fullImage": "assets/images/miyabi_full.png",
+      "rarity": "lightning",
+      "attribute": "frost",
+      "details": {
+        "description": "Chief of Hollow Special Operations Section 6. She has been awarded the title of 'Void Hunter', and is the youngest person in New Eridu to bear such a title.",
+        "abilities": [
+          {
+            "name": "Lightning Strike",
+            "description": "Deals lightning damage to a single target",
+            "cooldown": 3,
+            "damage": 120,
+            "effect": "Crit rate +25% for 2 turns"
+          },
+          {
+            "name": "Static Field",
+            "description": "Creates a field that slows enemies and deals continuous damage",
+            "cooldown": 12,
+            "damage": 45
+          },
+          {
+            "name": "Thunder God",
+            "description": "Ultimate ability that strikes all enemies with lightning",
+            "cooldown": 20,
+            "damage": 350
+          }
+        ],
+        "stats": {
+          "hp": 1150,
+          "attack": 75,
+          "defense": 50,
+          "speed": 90,
+          "critRate": 10,
+          "critDamage": 150
+        },
+        "backstory": "The youngest Void Hunter to date and Chief of Hollow Special Operations Section 6, Hoshimi Miyabi is a woman who defies the status quo and uses Tailless, her family heirloom's cursed blade, to protect the city of New Eridu and unveil the corruption within it. Although she's the chief of Section 6, Miyabi does little work related to it, with bureaucratic tasks being handled by Deputy Chief Tsukishiro Yanagi Miyabi has a great obsession with training, finding numerous ways to classify mundane tasks as a form of training, such as opening surprise boxes,watching films,and not attending meetings.The intensity of some of her training leads her to black out and enter a trance-like state, where's she's only capable of parroting the last word said by another."
+      }
+    },
+    {
+      "id": "2",
+      "name": "Ellen Joe",
+      "image": "assets/icons/ellen_icon.png",
+       "fullImage": "assets/images/ellen_full.png",
+      "rarity": "gear",
+      "attribute": "ice"
+    },
+    {
+      "id": "3",
+      "name": "青衣",
+      "image": "https://via.placeholder.com/150/1a1a1a",
+      "rarity": "star",
+      "attribute": "lightning"
+    },
+    {
+      "id": "4",
+      "name": "派派",
+      "image": "https://via.placeholder.com/150/1a1a1a",
+      "rarity": "gear",
+      "attribute": "fire"
+    },
+    {
+      "id": "5",
+      "name": "露西",
+      "image": "https://via.placeholder.com/150/1a1a1a",
+      "rarity": "fire",
+      "attribute": "star"
+    },
+    {
+      "id": "6",
+      "name": "蒼角",
+      "image": "https://via.placeholder.com/150/1a1a1a",
+      "rarity": "star",
+      "attribute": "ice"
+    },
+    {
+      "id": "7",
+      "name": "朱蕾",
+      "image": "https://via.placeholder.com/150/1a1a1a",
+      "rarity": "spark",
+      "attribute": "lightning"
+    },
+    {
+      "id": "8",
+      "name": "麗娜",
+      "image": "https://via.placeholder.com/150/1a1a1a",
+      "rarity": "star",
+      "attribute": "ice"
+    },
+    {
+      "id": "9",
+      "name": "艾蓮",
+      "image": "https://via.placeholder.com/150/1a1a1a",
+      "rarity": "star",
+      "attribute": "dark"
+    },
+    {
+      "id": "10",
+      "name": "萊卡恩",
+      "image": "https://via.placeholder.com/150/1a1a1a",
+      "rarity": "star",
+      "attribute": "lightning"
+    },
+    {
+      "id": "11",
+      "name": "葛莉絲",
+      "image": "https://via.placeholder.com/150/1a1a1a",
+      "rarity": "lightning",
+      "attribute": "fire"
+    },
+    {
+      "id": "12",
+      "name": "珂雷姐",
+      "image": "https://via.placeholder.com/150/1a1a1a",
+      "rarity": "fire",
+      "attribute": "fire"
+    },
+    {
+      "id": "13",
+      "name": "本",
+      "image": "https://via.placeholder.com/150/1a1a1a",
+      "rarity": "fire",
+      "attribute": "neutral"
+    },
+    {
+      "id": "14",
+      "name": "安東",
+      "image": "https://via.placeholder.com/150/1a1a1a",
+      "rarity": "lightning",
+      "attribute": "fire"
+    },
+    {
+      "id": "15",
+      "name": "可琳",
+      "image": "https://via.placeholder.com/150/1a1a1a",
+      "rarity": "gear",
+      "attribute": "ice"
+    },
+    {
+      "id": "16",
+      "name": "11號",
+      "image": "https://via.placeholder.com/150/1a1a1a",
+      "rarity": "fire",
+      "attribute": "ice"
+    },
+    {
+      "id": "17",
+      "name": "貓又",
+      "image": "https://via.placeholder.com/150/1a1a1a",
+      "rarity": "star",
+      "attribute": "dark"
+    },
+    {
+      "id": "18",
+      "name": "妮可",
+      "image": "https://via.placeholder.com/150/1a1a1a",
+      "rarity": "spark",
+      "attribute": "lightning"
+    }
+  ]
+}

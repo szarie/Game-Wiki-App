@@ -1,116 +1,394 @@
 import 'package:flutter/material.dart';
+import 'package:mobdev/nav.dart';
+import 'package:mobdev/agent.dart';
 
-void main() {
-  runApp(Main());
+class AgentDetailsPage extends StatefulWidget {
+  final Agent agent;
+  const AgentDetailsPage({required this.agent, super.key});
+  @override
+  State<AgentDetailsPage> createState() => _AgentDetailsPageState();
 }
 
-class Main extends StatelessWidget {
-  const Main({super.key});
+class _AgentDetailsPageState extends State<AgentDetailsPage> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: MyApp(),
+    return BasePage(
+      currentIndex: 1,
+      child: Container(
+        color: const Color.fromARGB(255, 27, 26, 26),
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Container(
+                height: 450,
+                width: double.infinity,
+                color: const Color.fromARGB(255, 33, 33, 33),
+                child: Image.asset(
+                  widget.agent.fullImage ?? widget.agent.image,
+                  fit: BoxFit.contain,
+                  errorBuilder: (context, error, stackTrace) {
+                    return Container(
+                        color: const Color.fromARGB(255, 82, 94, 94),
+                        child: Center(
+                            child: Icon(
+                          Icons.error,
+                          color: const Color.fromARGB(255, 255, 255, 255),
+                          size: 50,
+                        )));
+                  },
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Container(
+                  color: const Color.fromARGB(255, 27, 26, 26),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        widget.agent.name,
+                        style: TextStyle(
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                          color: const Color.fromARGB(255, 255, 255, 255),
+                        ),
+                      ),
+                      Text(
+                        'Agent ID: ${widget.agent.id}',
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: const Color.fromARGB(255, 255, 255, 255),
+                        ),
+                      ),
+                      SizedBox(height: 20),
+                      // Rarity and Attribute
+                      Row(
+                        children: [
+                          _buildAttributeChip('Rarity', widget.agent.rarity),
+                          SizedBox(width: 10),
+                          _buildAttributeChip(
+                              'Attribute', widget.agent.attribute),
+                        ],
+                      ),
+                      //description
+                      SizedBox(height: 30),
+                      if (widget.agent.details != null) ...[
+                        Text(
+                          'Description',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: const Color.fromARGB(255, 255, 255, 255),
+                          ),
+                        ),
+                        SizedBox(height: 8),
+                        Text(
+                          widget.agent.details!.description,
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: const Color.fromARGB(255, 255, 255, 255),
+                          ),
+                        ),
+                        SizedBox(height: 30),
+                        // Abilities
+                        Text(
+                          'abilities',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: const Color.fromARGB(255, 255, 255, 255),
+                          ),
+                        ),
+                        SizedBox(height: 15),
+                        ...widget.agent.details!.abilities.map((ability) {
+                          return _buildAbilityCard(ability);
+                        }).toList(),
+                        SizedBox(height: 30),
+                        // Stats
+                        Text(
+                          'Stats',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: const Color.fromARGB(255, 255, 255, 255),
+                          ),
+                        ),
+                        SizedBox(height: 15),
+                        _buildStatsTable(widget.agent.details!.stats),
+                        SizedBox(height: 30),
+                        // Backstory
+                        Text(
+                          'Backstory',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: const Color.fromARGB(255, 255, 255, 255),
+                          ),
+                        ),
+                        SizedBox(height: 8),
+                        Text(
+                          widget.agent.details!.backstory,
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: const Color.fromARGB(255, 255, 255, 255),
+                          ),
+                        ),
+                      ] else ...[
+                        // display if no details available
+                        Container(
+                          padding: EdgeInsets.all(16),
+                          decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 100, 123, 123),
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: Center(
+                            child: Text(
+                              'Additional details for ${widget.agent.name} are not available.',
+                              style: TextStyle(
+                                fontSize: 16,
+                                color: const Color.fromARGB(255, 255, 255, 255),
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
 
-class MyApp extends StatefulWidget {
-  const MyApp({super.key});
-  @override
-  State<MyApp> createState() => _MyAppState();
-}
+Widget _buildAttributeChip(String label, String value) {
+  Color chipColor = _getAttributeColor(value);
 
-class _MyAppState extends State<MyApp> {
-  int _currentIndex = 0;
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      bottomNavigationBar: BottomAppBar(
-        color: const Color.fromARGB(255, 27, 26, 26),
-        child: Center(
-          child: Padding(
-            padding: EdgeInsets.symmetric(
-                horizontal: MediaQuery.of(context).size.width * 0.0500),
-            child: Row(
-              mainAxisSize: MainAxisSize.max,
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                IconButton(
-                  icon: Icon(Icons.home_outlined),
-                  color: _currentIndex == 0
-                      ? const Color.fromARGB(255, 71, 255, 86)
-                      : const Color.fromARGB(255, 255, 255, 255),
-                  iconSize: 30.0,
-                  onPressed: () {},
-                ),
-                IconButton(
-                  icon: Icon(Icons.people_alt_outlined),
-                  color: _currentIndex == 0
-                      ? const Color.fromARGB(255, 71, 255, 86)
-                      : const Color.fromARGB(255, 255, 255, 255),
-                  iconSize: 30.0,
-                  onPressed: () {
-                    Navigator.pushReplacement(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => MyApp(),
-                        ));
-                  },
-                ),
-                IconButton(
-                  icon: Icon(Icons.favorite_border_outlined),
-                  color: _currentIndex == 0
-                      ? const Color.fromARGB(255, 71, 255, 86)
-                      : const Color.fromARGB(255, 255, 255, 255),
-                  iconSize: 30.0,
-                  onPressed: () {},
-                ),
-                IconButton(
-                  icon: Icon(Icons.person_outline),
-                  color: _currentIndex == 0
-                      ? const Color.fromARGB(255, 71, 255, 86)
-                      : const Color.fromARGB(255, 255, 255, 255),
-                  iconSize: 30.0,
-                  onPressed: () {},
-                ),
-              ],
-            ),
+  return Container(
+    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+    decoration: BoxDecoration(
+      color: chipColor.withOpacity(0.2),
+      borderRadius: BorderRadius.circular(20),
+      border: Border.all(color: chipColor.withOpacity(0.5), width: 1),
+    ),
+    child: Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text(
+          '$label: ',
+          style: TextStyle(
+            fontSize: 14,
+            color: Colors.grey,
           ),
         ),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+        Text(
+          value,
+          style: TextStyle(
+            fontSize: 14,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
+        ),
+      ],
+    ),
+  );
+}
+
+Widget _buildAbilityCard(Ability ability) {
+  return Container(
+    margin: EdgeInsets.only(bottom: 10),
+    padding: EdgeInsets.all(12),
+    decoration: BoxDecoration(
+      color: Color(0xFF2A2A2A),
+      borderRadius: BorderRadius.circular(8),
+    ),
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const Text(
-              'Welcome to the Home Page',
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            Text(
+              ability.name,
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
             ),
-            const SizedBox(height: 20),
-            Image.asset(
-              'assets/icons/fubuki.jpg',
-              width: 200,
-              height: 200,
-            ),
-            const SizedBox(height: 10),
-            GestureDetector(
-              onTap: () {},
-              child: Column(
-                children: [
-                  Icon(Icons.calculate_outlined,
-                      size: 50, color: const Color.fromARGB(255, 0, 0, 0)),
-                  Text(
-                    'Calculator',
-                    style: TextStyle(fontSize: 16),
-                  ),
-                ],
+            Container(
+              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              decoration: BoxDecoration(
+                color: Colors.redAccent.withOpacity(0.2),
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Text(
+                'CD: ${ability.cooldown}',
+                style: TextStyle(
+                  fontSize: 12,
+                  color: Colors.redAccent,
+                ),
               ),
             ),
           ],
         ),
-      ),
-    );
+        SizedBox(height: 8),
+        Text(
+          ability.description,
+          style: TextStyle(
+            fontSize: 14,
+            color: Colors.white70,
+          ),
+        ),
+        if (ability.damage != null) ...[
+          SizedBox(height: 6),
+          Text(
+            'Damage: ${ability.damage}',
+            style: TextStyle(
+              fontSize: 14,
+              color: Colors.orange[300],
+            ),
+          ),
+        ],
+        if (ability.effect != null) ...[
+          SizedBox(height: 6),
+          Text(
+            'Effect: ${ability.effect}',
+            style: TextStyle(
+              fontSize: 14,
+              color: Colors.cyan[300],
+            ),
+          ),
+        ],
+      ],
+    ),
+  );
+}
+
+Widget _buildStatsTable(Stats stats) {
+  return Container(
+    padding: EdgeInsets.all(15),
+    decoration: BoxDecoration(
+      color: Color(0xFF2A2A2A),
+      borderRadius: BorderRadius.circular(8),
+    ),
+    child: Column(
+      children: [
+        _buildStatRow('HP', stats.hp),
+        _buildStatRow('Attack', stats.attack),
+        _buildStatRow('Defense', stats.defense),
+        _buildStatRow('Speed', stats.speed),
+        _buildStatRow('Crit Rate', stats.critRate, suffix: '%'),
+        _buildStatRow('Crit Damage', stats.critDamage, suffix: '%'),
+      ],
+    ),
+  );
+}
+
+Widget _buildStatRow(String label, int value, {String suffix = ''}) {
+  return Padding(
+    padding: const EdgeInsets.symmetric(vertical: 6),
+    child: Row(
+      children: [
+        Expanded(
+          flex: 2,
+          child: Text(
+            label,
+            style: TextStyle(
+              fontSize: 14,
+              color: Colors.grey[300],
+            ),
+          ),
+        ),
+        Expanded(
+          flex: 5,
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(4),
+            child: LinearProgressIndicator(
+              value: _normalizeStatValue(label, value),
+              backgroundColor: Colors.grey[800],
+              valueColor: AlwaysStoppedAnimation<Color>(_getStatColor(label)),
+            ),
+          ),
+        ),
+        SizedBox(width: 8),
+        Text(
+          '$value$suffix',
+          style: TextStyle(
+            fontSize: 14,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
+        ),
+      ],
+    ),
+  );
+}
+
+// Helper methods for coloring and normalization
+
+Color _getAttributeColor(String value) {
+  switch (value.toLowerCase()) {
+    case 'fire':
+      return Colors.deepOrange;
+    case 'ice':
+    case 'frost':
+      return Colors.lightBlueAccent;
+    case 'lightning':
+      return Colors.yellowAccent;
+    case 'dark':
+      return Colors.purpleAccent;
+    case 'neutral':
+      return Colors.grey;
+    case 'star':
+      return Colors.amber;
+    case 'gear':
+      return Colors.teal;
+    case 'spark':
+      return Colors.cyanAccent;
+    default:
+      return Colors.grey;
+  }
+}
+
+Color _getStatColor(String stat) {
+  switch (stat) {
+    case 'HP':
+      return Colors.greenAccent;
+    case 'Attack':
+      return Colors.redAccent;
+    case 'Defense':
+      return Colors.blueAccent;
+    case 'Speed':
+      return Colors.purpleAccent;
+    case 'Crit Rate':
+    case 'Crit Damage':
+      return Colors.orangeAccent;
+    default:
+      return Colors.grey;
+  }
+}
+
+double _normalizeStatValue(String stat, int value) {
+  switch (stat) {
+    case 'HP':
+      return value / 2000; // Assuming max HP is around 2000
+    case 'Attack':
+      return value / 100; // Assuming max Attack is around 100
+    case 'Defense':
+      return value / 100; // Assuming max Defense is around 100
+    case 'Speed':
+      return value / 100; // Assuming max Speed is around 100
+    case 'Crit Rate':
+      return value / 100; // Crit Rate is already a percentage
+    case 'Crit Damage':
+      return value / 200; // Assuming max Crit Damage is 200%
+    default:
+      return value / 100;
   }
 }

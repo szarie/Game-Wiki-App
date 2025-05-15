@@ -4,11 +4,13 @@ import 'package:flutter/material.dart';
 class BasePage extends StatefulWidget {
   final int currentIndex;
   final Widget child;
+  final String? title;
 
   const BasePage({
     Key? key,
     required this.currentIndex,
     required this.child,
+    this.title,
   }) : super(key: key);
 
   @override
@@ -17,6 +19,23 @@ class BasePage extends StatefulWidget {
 
 class _BasePageState extends State<BasePage> {
   late int _currentIndex;
+
+  String _getTitle() {
+    if (widget.title != null) return widget.title!;
+
+    switch (_currentIndex) {
+      case 0:
+        return 'Home';
+      case 1:
+        return 'Agents List';
+      case 2:
+        return 'Favorites';
+      case 3:
+        return 'Profile';
+      default:
+        return 'App';
+    }
+  }
 
   @override
   void initState() {
@@ -28,12 +47,27 @@ class _BasePageState extends State<BasePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: widget.child,
+      appBar: AppBar(
+        title: Text(_getTitle(),
+            style: TextStyle(
+              color: const Color.fromARGB(255, 255, 255, 255),
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+            )),
+        backgroundColor: const Color.fromARGB(255, 33, 33, 33),
+        centerTitle: true,
+        iconTheme: const IconThemeData(
+          color: Color.fromARGB(255, 156, 255, 100), // Change icon color
+        ),
+      ),
       bottomNavigationBar: BottomAppBar(
         color: const Color.fromARGB(255, 27, 26, 26),
         child: Center(
           child: Padding(
             padding: EdgeInsets.symmetric(
-                horizontal: MediaQuery.of(context).size.width * 0.0500),
+              horizontal: MediaQuery.of(context).size.width *
+                  0.0500, // padding for the bottom bar
+            ),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -61,7 +95,6 @@ class _BasePageState extends State<BasePage> {
                   iconSize: 30.0,
                   onPressed: () {
                     if (_currentIndex != 1) {
-                      // Change this condition to check against 1
                       Navigator.pushReplacementNamed(
                         context,
                         '/agent_list', // Agent list route
