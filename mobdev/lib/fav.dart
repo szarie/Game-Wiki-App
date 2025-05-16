@@ -4,7 +4,6 @@ import 'package:mobdev/agent_list.dart';
 import 'package:mobdev/nav.dart';
 import 'package:mobdev/agent.dart';
 import 'dart:convert';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:mobdev/fav_manager.dart';
 
 class FavoritePage extends StatefulWidget {

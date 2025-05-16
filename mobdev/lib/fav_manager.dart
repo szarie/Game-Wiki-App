@@ -1,7 +1,3 @@
-import 'package:flutter/material.dart';
-import 'package:mobdev/nav.dart';
-import 'package:mobdev/agent.dart';
-import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class FavoritesManager {
