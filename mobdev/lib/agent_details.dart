@@ -41,6 +41,7 @@ class _AgentDetailsPageState extends State<AgentDetailsPage> {
   Widget build(BuildContext context) {
     return BasePage(
       currentIndex: 1,
+      title: 'Agent Details',
       actions: [
         IconButton(
             icon: Icon(
