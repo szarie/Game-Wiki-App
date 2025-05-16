@@ -5,12 +5,14 @@ class BasePage extends StatefulWidget {
   final int currentIndex;
   final Widget child;
   final String? title;
+  final List<Widget>? actions;
 
   const BasePage({
     Key? key,
     required this.currentIndex,
     required this.child,
     this.title,
+    this.actions,
   }) : super(key: key);
 
   @override
@@ -59,6 +61,7 @@ class _BasePageState extends State<BasePage> {
         iconTheme: const IconThemeData(
           color: Color.fromARGB(255, 156, 255, 100), // Change icon color
         ),
+        actions: widget.actions,
       ),
       bottomNavigationBar: BottomAppBar(
         color: const Color.fromARGB(255, 27, 26, 26),
