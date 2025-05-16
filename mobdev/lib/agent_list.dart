@@ -67,8 +67,13 @@ class _AgentListPageState extends State<AgentListPage> {
 
 class AgentCard extends StatelessWidget {
   final Agent agent;
+  final Function? onFavoriteToggle;
 
-  const AgentCard({Key? key, required this.agent}) : super(key: key);
+  const AgentCard({
+    Key? key,
+    required this.agent,
+    this.onFavoriteToggle,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobdev/fav_manager.dart';
 import 'package:mobdev/nav.dart';
 import 'package:mobdev/agent.dart';
 
@@ -9,11 +10,62 @@ class AgentDetailsPage extends StatefulWidget {
   State<AgentDetailsPage> createState() => _AgentDetailsPageState();
 }
 
+// class AgentCard extends StatelessWidget {
+//   final Agent agent;
+//   final Function? onFavoriteToggle;
+
+//   const AgentCard({
+//     key? key,
+//     required this.agent,
+//     this.onFavoriteToggle,
+//   }) : super(key: key);
+// }
+
 class _AgentDetailsPageState extends State<AgentDetailsPage> {
+  bool _isFavorite = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _checkFavoriteStatus();
+  }
+
+  Future<void> _checkFavoriteStatus() async {
+    final isFav = await FavoritesManager.isFavorite(widget.agent.id);
+    setState(() {
+      _isFavorite = isFav;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return BasePage(
       currentIndex: 1,
+      actions: [
+        IconButton(
+            icon: Icon(
+              _isFavorite ? Icons.favorite : Icons.favorite_border,
+              color: _isFavorite ? Colors.red : Colors.white,
+            ),
+            onPressed: () async {
+              final isFav =
+                  await FavoritesManager.toggleFavorite(widget.agent.id);
+              setState(() {
+                _isFavorite = isFav;
+              });
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text(_isFavorite
+                      ? '${widget.agent.name} added to favorites'
+                      : '${widget.agent.name} removed from favorites'),
+                  duration: Duration(seconds: 1),
+                ),
+              );
+              if (!isFav) {
+                Navigator.of(context).pushReplacementNamed('/favorites');
+              }
+            })
+      ],
       child: Container(
         color: const Color.fromARGB(255, 27, 26, 26),
         child: SingleChildScrollView(
@@ -54,13 +106,14 @@ class _AgentDetailsPageState extends State<AgentDetailsPage> {
                           color: const Color.fromARGB(255, 255, 255, 255),
                         ),
                       ),
-                      Text(
-                        'Agent ID: ${widget.agent.id}',
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: const Color.fromARGB(255, 255, 255, 255),
-                        ),
-                      ),
+                      // Display agent ID if needed
+                      // Text(
+                      //   'Agent ID: ${widget.agent.id}',
+                      //   style: TextStyle(
+                      //     fontSize: 16,
+                      //     color: const Color.fromARGB(255, 255, 255, 255),
+                      //   ),
+                      // ),
                       SizedBox(height: 20),
                       // Rarity and Attribute
                       Row(
