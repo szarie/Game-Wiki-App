@@ -16,7 +16,7 @@ class UserProfile {
     required this.name,
     required this.email,
     this.bio = '',
-    this.avatarUrl = 'assets/icons/default_avatar.png',
+    this.avatarUrl = '',
   });
 
   factory UserProfile.fromJson(Map<String, dynamic> json) {
@@ -146,6 +146,7 @@ class _ProfilePageState extends State<ProfilePage> {
         String name = _userProfile.name;
         String email = _userProfile.email;
         String bio = _userProfile.bio;
+        String avatarUrl = _userProfile.avatarUrl;
 
         return AlertDialog(
           title: Text('Edit Profile'),
@@ -153,6 +154,78 @@ class _ProfilePageState extends State<ProfilePage> {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
+                // Avatar
+                GestureDetector(
+                  onTap: () async {
+                    // Show avatar selection options
+                    final selectedAvatar = await showDialog<String>(
+                      context: context,
+                      builder: (context) => AlertDialog(
+                        title: Text('Select Avatar'),
+                        content: SingleChildScrollView(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Wrap(
+                                spacing: 10,
+                                runSpacing: 10,
+                                children: [
+                                  for (int i = 1; i <= 6; i++)
+                                    GestureDetector(
+                                      onTap: () => Navigator.pop(context,
+                                          'assets/icons/avatar_$i.png'),
+                                      child: CircleAvatar(
+                                        radius: 30,
+                                        backgroundImage: AssetImage(
+                                            'assets/icons/avatar_$i.png'),
+                                      ),
+                                    ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                        actions: [
+                          TextButton(
+                            onPressed: () => Navigator.pop(context),
+                            child: Text('Cancel'),
+                          ),
+                        ],
+                      ),
+                    );
+
+                    if (selectedAvatar != null) {
+                      avatarUrl = selectedAvatar;
+                    }
+                  },
+                  child: Stack(
+                    alignment: Alignment.bottomRight,
+                    children: [
+                      CircleAvatar(
+                        radius: 40,
+                        backgroundImage: AssetImage(avatarUrl),
+                        backgroundColor: Colors.grey[800],
+                        child: avatarUrl == 'assets/icons/default_avatar.png'
+                            ? Icon(Icons.person,
+                                size: 40, color: Colors.white70)
+                            : null,
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          shape: BoxShape.circle,
+                        ),
+                        padding: EdgeInsets.all(5),
+                        child: Icon(
+                          Icons.edit,
+                          size: 15,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(height: 20),
                 TextField(
                   decoration: InputDecoration(labelText: 'Name'),
                   controller: TextEditingController(text: name),
@@ -185,6 +258,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   _userProfile.name = name;
                   _userProfile.email = email;
                   _userProfile.bio = bio;
+                  _userProfile.avatarUrl = avatarUrl;
                 });
                 _saveUserProfile();
                 Navigator.pop(context);
@@ -271,7 +345,8 @@ class _ProfilePageState extends State<ProfilePage> {
                           icon: Icon(Icons.edit),
                           label: Text('Edit Profile'),
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.blueAccent,
+                            backgroundColor:
+                                const Color.fromARGB(255, 100, 161, 64),
                             foregroundColor: Colors.white,
                           ),
                         ),
