@@ -158,33 +158,25 @@ class RarityIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    IconData iconData;
-    Color iconColor;
+    // IconData iconData;
+    // Color iconColor;
 
-    switch (rarity) {
-      case 'star':
-        iconData = Icons.star;
-        iconColor = Colors.amber;
+    String imagePath;
+    switch (rarity.toLowerCase()) {
+      case 'a':
+        // iconData = Icons.star;
+        // iconColor = Colors.amber;
+        imagePath = 'assets/icons/A.png';
         break;
-      case 'lightning':
-        iconData = Icons.flash_on;
-        iconColor = Colors.yellow;
-        break;
-      case 'gear':
-        iconData = Icons.settings;
-        iconColor = Colors.white;
-        break;
-      case 'fire':
-        iconData = Icons.local_fire_department;
-        iconColor = Colors.orange;
-        break;
-      case 'spark':
-        iconData = Icons.auto_awesome;
-        iconColor = Colors.cyanAccent;
+      case 's':
+        // iconData = Icons.flash_on;
+        // iconColor = Colors.yellow;
+        imagePath = 'assets/icons/S.png';
         break;
       default:
-        iconData = Icons.star_border;
-        iconColor = Colors.grey;
+        // iconData = Icons.star_border;
+        // iconColor = Colors.grey;
+        imagePath = 'assets/icons/unknown.png';
     }
 
     return Container(
@@ -193,12 +185,21 @@ class RarityIcon extends StatelessWidget {
         shape: BoxShape.circle,
       ),
       padding: const EdgeInsets.all(3),
-      child: Icon(
-        iconData,
-        color: iconColor,
-        size: 16,
-      ),
+      child: Image.asset(imagePath, width: 16, height: 16,
+          errorBuilder: (context, error, stackTrace) {
+        return Icon(
+          Icons.star_border,
+          color: Colors.grey,
+          size: 16,
+        );
+      }),
     );
+    // child: Icon(
+    //   iconData,
+    //   color: iconColor,
+    //   size: 16,
+    // ),
+    // ),
   }
 }
 
