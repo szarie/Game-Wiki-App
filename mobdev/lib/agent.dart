@@ -80,8 +80,8 @@ class Ability {
   final String name;
   final String description;
   final int cooldown;
-  final dynamic damage; // Can be int or null
-  final dynamic effect; // Can be String or null
+  final dynamic damage;
+  final dynamic effect;
 
   Ability({
     required this.name,
