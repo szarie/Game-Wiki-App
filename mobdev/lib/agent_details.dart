@@ -405,6 +405,10 @@ Color _getAttributeColor(String value) {
       return Colors.teal;
     case 'spark':
       return Colors.cyanAccent;
+    case 's':
+      return Color.fromARGB(255, 255, 191, 64);
+    case 'a':
+      return Color.fromARGB(255, 172, 36, 240);
     default:
       return Colors.grey;
   }
