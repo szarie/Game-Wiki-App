@@ -5,29 +5,106 @@
       "name": "Hoshimi Miyabi",
       "image": "assets/icons/miyabi_icon.png",
       "fullImage": "assets/images/miyabi_full.png",
-      "rarity": "lightning",
-      "attribute": "frost",
+      "rarity": "S",
+      "attribute": "Frost",
+      "specialty": "Anomaly",
       "details": {
         "description": "Chief of Hollow Special Operations Section 6. She has been awarded the title of 'Void Hunter', and is the youngest person in New Eridu to bear such a title.",
         "abilities": [
           {
-            "name": "Lightning Strike",
-            "description": "Deals lightning damage to a single target",
-            "cooldown": 3,
-            "damage": 120,
-            "effect": "Crit rate +25% for 2 turns"
+            "name": "Basic Attack: Kazahana",
+            "description": "Unleashes up to five slashes ahead, the first two deal Physical DMG, and the last three deal Frost DMG",
+            "energy": 0,
+            "damage": 306,
+            "effect": "Block enemy attacks during the 5th hit of the Basic Attack."
           },
           {
-            "name": "Static Field",
-            "description": "Creates a field that slows enemies and deals continuous damage",
-            "cooldown": 12,
-            "damage": 45
+            "name": "Basic Attack: Shimotsuki",
+            "description": "With at least 2 points of Fallen Frost, hold Basic Attack to activate:\nHoshimi Miyabi sheaths her blade, enters Shimotsuki Stance and starts to charge up. Every level of charge will consume 2 points of Fallen Frost, up to a maximum of three levels of charge. \nWhen releasing Basic Attack, or when Fallen Frost is completely depleted, Hoshimi Miyabi will draw her blade and unleash a powerful slash ahead based on the current charge level, dealing massive Frost DMG. She then exits Shimotsuki Stance.",
+            "energy": 0,
+            "damage": 5061,
+            "effect": "Character is invulnerable during Shimotsuki Stance.\nHoshimi Miyabi can have up to 6 points of Fallen Frost. Upon entering the battlefield, Hoshimi Miyabi immediately obtains 3 points of Fallen Frost."
           },
           {
-            "name": "Thunder God",
-            "description": "Ultimate ability that strikes all enemies with lightning",
-            "cooldown": 20,
+            "name": "Dodge: Mizutori",
+            "description": "Press Dodge to activate:\nA quick dash dodge. \nCharacter is invulnerable while using this skill. \nWhile dodging, repeatedly press or hold Dodge to activate a dash dodge that covers a lot of ground.",
+            "energy": 0,
+            "damage": 350,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Dash Attack: Fuyubachi",
+            "description": "Press Basic Attack during a dodge to activate:\nSlashes enemies in front, dealing Physical DMG.",
+            "energy": 0,
             "damage": 350
+          },
+          {
+            "name": "Dodge Counter: Kan Suzume",
+            "description": "Press Basic Attack during a Perfect Dodge to activate:\nSlashes enemies in front, dealing Frost DMG.",
+            "energy": 0,
+            "damage": 581,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Quick Assist: Dancing Petals",
+            "description": "When the on-field character is launched, press Assist Attack to activate:\nSlashes enemies in front, dealing Frost DMG.",
+            "energy": 0,
+            "damage": 247,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Defensive Assist: Drifting Petals",
+            "description": "When the on-field character is about to be attacked, press Assist Attack to activate:\nParries the enemy's attack, dealing massive Daze.",
+            "energy": 0,
+            "damage": 457,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Assist Follow-Up: Falling Petals",
+            "description": "Press Basic Attack after a Defensive Assist to activate:\nCharges and slashes enemies in front, dealing Frost DMG.",
+            "energy": 0,
+            "damage": 799,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Special Attack: Miyuki",
+            "description": "Press Special Attack to activate:\nQuickly draws her blade and slashes ahead, dealing Frost DMG.",
+            "energy": 0,
+            "damage": 85,
+            "effect": "Anti-Interrupt level is increased while using this skill."
+          },
+          {
+            "name": "EX Special Attack: Hisetsu",
+            "description": "With enough Energy, press EX Special Attack to activate:\nRush forward, unleashing powerful slashes against enemies along the way, dealing massive Frost DMG.\nUpon activating this skill, gain 2 points of Fallen Frost. Character is invulnerable while using this skill.\nAfter using this skill, with enough Energy, press EX Special Attack again to activate:\nConsume extra Energy and unleash a powerful follow-up attack against enemies in front, dealing massive Frost DMG.",
+            "energy": 40,
+            "damage": 1143,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Chain Attack: Spring's Call",
+            "description": "When a Chain Attack is triggered, select the character to activate:\nUnleashes a powerful slash at enemies in front in a large area, dealing massive Frost DMG.",
+            "energy": 0,
+            "damage": 1487,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Ultimate: Lingering Snow",
+            "description": "When Decibel Rating is at Maximum, press Ultimate Colored to activate:\nUnleashes powerful slashes at enemies ahead in a large area then pauses, before unleashing a Finishing Move, dealing massive Frost DMG.\nUpon activating this skill, gain 3 points of Fallen Frost and increase Ice DMG by 30% for 12s.",
+            "energy": 0,
+            "damage": 5644,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Core Passive: Searing Cold",
+            "description": "When Hoshimi Miyabi deals Frost DMG, she applies Icefire to the target, lasting 30s. When accumulating Frost Anomaly Buildup against targets with Icefire, increases Frost Anomaly Buildup Rate by 100% of Hoshimi Miyabi's CRIT Rate, up to a maximum increase of 80%. As Hoshimi Miyabi accumulates Frost Anomaly Buildup, it has its own independent Attribute Anomaly Buildup gauge and triggers Freeze, Shatter, and Frostbite that can react with other Attribute Anomalies, including Ice Attribute Anomaly, to trigger Disorder.\n\nWhen Hoshimi Miyabi applies Frostbite to enemies with Icefire, it will consume the Icefire to trigger Frostburn - Break, dealing Frost DMG equal to X% of Hoshimi Miyabi's ATK and causing the target to enter the Frostburn state. All squad members accumulate Y% more Anomaly Buildup against enemies under the Frostburn state, but Hoshimi Miyabi cannot reapply Icefire to these enemies. The Frostburn state ends when Frostbite expires. While this state remains active, triggering another Attribute Anom ly will overwrite Frostbite and remove Frostburn.",
+            "energy": 0,
+            "damage": 1500,
+             "effect": "Upon triggering Frostburn - Break, Hoshimi Miyabi obtains 1 point of Fallen Frost. This effect can trigger once every 10s."
+          },
+          {
+            "name": "Additional Ability: Bask in Frost",
+            "description": "When another character in your squad is a Support character or shares the same Faction: \nBasic Attack: Shimotsuki DMG increases by 60%. When any squad member triggers Disorder, Hoshimi Miyabi obtains 2 points of Fallen Frost and Basic Attack: Shimotsuki during the next Shimotsuki Stance will ignore 30% of the target's Ice RES.",
+            "energy": 0
           }
         ],
         "stats": {
@@ -45,9 +122,333 @@
       "id": "2",
       "name": "Ellen Joe",
       "image": "assets/icons/ellen_icon.png",
-       "fullImage": "assets/images/ellen_full.png",
-      "rarity": "gear",
-      "attribute": "ice"
+      "fullImage": "assets/images/ellen_full.png",
+      "rarity": "S",
+      "attribute": "ice",
+      "specialty": "Attack",
+      "details": {
+        "description": "the newest Maid of Victoria Housekeeping Co.",
+        "abilities": [
+        {
+            "name": "Attack: Saw Teeth Trimming",
+            "description": "Press Basic Attack to activate. Unleash up to 3 attacks, dealing Physical DMG. Press repeatedly or hold Basic Attack during the 3rd attack to extend the skill duration.",
+            "energy": 0,
+            "damage": 703
+          },
+          {
+            "name": "Attack: Flash Freeze Trimming",
+            "description": "While Flash Freeze is active, press Basic Attack to activate:\nLaunch up to 3 attacks at enemies in front, dealing Ice DMG. Each attack consumes 1 Flash Freeze Charge. Press repeatedly or hold Basic Attack during the 3rd attack to extend the skill duration.",
+            "energy": 0,
+            "damage": 1174
+          },
+          {
+            "name": "Dodge: Vortex",
+            "description": "Press Dodge to activate:\nA rapid dodge. Character is invulnerable while using this skill.",
+            "energy": 0,
+            "effect": "When Perfect Dodge is triggered, Ellen gains the Quick Charge effect, reducing the charge time of Dash Attack: Arctic Ambush, lasting up to 5 seconds or until it triggers once."
+          },
+          {
+            "name": "Dash: Roaming Hunt",
+            "description": "Hold or double-press Dodge to activate:\nEnter the Roaming state, allowing dashing movement. In the Roaming state, drag the joystick to control Ellen's direction, and release to stop.",
+            "energy": 0,
+             "effect": "Ellen is invulnerable for a brief time after activation."
+          },
+          {
+            "name": "Dash Attack: Arctic Ambush",
+            "description": "While in the Roaming state, press Basic Attack to activate:\nDelivers a spinning slash to enemies before opening her scissors for a Swift Scissors strike, dealing Ice DMG\nGain 1 point of Flash Freeze Charge when the Swift Scissors strike hits.\n\nWhile in the Roaming state, hold Basic Attack to activate:\nPerforma spinning slash against the enemy, then pull apart the scissors to unleash a Charged Scssors strike, dealing massive Ice DMG. If the enemy is Frozen, it always triggers Shatter. Anti-Interrupt level is increased while charging the skill and DMG taken is reduced by 40%.",
+            "energy": 0,
+            "damage": 374,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Flash Freeze",
+            "description": "When Ellen has Flash Freeze Charges, the Flash Freeze effect is activated. Once Flash Freeze activates, Basic Attacks and Dash Attack expend Flash Freeze Charges, dealing massive Ice DMG. Ellen can have up to a maximum of 6 Flash Freeze Charges",
+            "energy": 0
+          },
+          {
+            "name": "Dash Attack: Monstrous Wave",
+            "description": "Press Basic Attack during a dodge to activate:\nLaunches a dashing slash attack at enemies in front, dealing Physical DMG",
+            "energy": 0,
+            "damage": 182
+          },
+          {
+            "name": "Dash Attack: Cold Snap",
+            "description": "While Flash Freeze is active, press Basic Attack during dodge to activate: Launches a dashing slash attack at enemies in front, dealing Ice DMG.Consumes 1 Flash Freeze Charge.",
+            "energy": 0,
+            "damage": 345
+          },
+          {
+            "name": "Dodge Counter: Reef Rock",
+            "description": "When a Chain Attack is triggered, select the character to activate:\nCrash down from above and unleash an ice storm, dealing massive Ice DMG ",
+            "energy": 0,
+            "damage": 361,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Assist: Wavefront Impact",
+            "description": "When the character on field is about to be attacked, press Assist to activate.Parries the enemy's attack, dealing massive Daze.",
+            "energy": 0,
+            "damage": 247,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Special Attack: Drift",
+            "description": "Press Special Attack to activate:\nUse a quick tail sweep attack in front, dealing Ice DMG.",
+            "energy": 0,
+            "damage": 195,
+            "effect": "Anti-Interrupt level is increased while using this skill."
+          },
+          {
+            "name": "EX Special Attack: Tail Swipe",
+            "description": "With enough Energy, press EX Special Attack to activate:\nPerform a forceful tail whip attack that deals massive Ice DMG.Gain 1 Flash Freeze charge upon striking an enemy. Character is invulnerable while using this skill. After executing the move, you can directly follow up with the 3rd hit of a Basic Attack.",
+            "energy": 0,
+            "damage": 891,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "EX Special Attack: Sharknami",
+            "description": "With enough Energy and after executing EX Special Attack: Tail Swipe, press EX Special Attack to activate: Perform a powerful series of slashes ahead that deal massive Ice DMG. Gain 1 Flash Freeze Charge upon striking an enemy. Character is invulnerable while using this skill.After executing the move, you can immediately follow up with the 3rd-hit of a Basic Attack.",
+            "energy": 0,
+            "damage": 100,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Core Passive: Sharp-Toothed",
+            "description": "When Ellen launches a charged scissor strike during Dash Attack: Arctic Ambush, or consumes a Flash Freeze Charge to activate Basic Attack: Flash Freeze Trimming, the skill's CRIT DMG is increased by X%.",
+            "energy": 0,
+            "damage": 247,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Additional Ability: Rising Storm",
+            "description": "When any other character in your squad shares the same Attribute or Faction:\nWhen Ellen deals Ice DMG, subsequent Ice DMG increases by 3% for 10s. This effect can stack up to 10 times, and repeated triggers reset the duration.",
+            "energy": 0
+          }
+      ],
+       "stats": {
+          "hp": 1150,
+          "attack": 75,
+          "defense": 50,
+          "speed": 90,
+          "critRate": 10,
+          "critDamage": 150
+        },
+         "backstory": "Ellen Joe is a laid-back Shark Thiren that attends school in New Eridu who hates activities that require energy. Despite her personality and aloofness, Ellen is a significantly popular student at the school,though she prefers spending time with fellow students Ruby, Monna, and Lynn at karaoke bars, Godfinger and more.\n\nEllen's school life is balanced with her job as a maid for Victoria Housekeeping Co., where she specializes in security management and garden maintenance.Though she dislikes physical activities, the support of her teammates that she considers her friend as well, allow her to unleash formidable power, becoming a significant threat in combat. However, this comes at the caveat of consuming a lot of her energy, which is why she has a lollipop on her person at most times.\nEllen is shown to be constantly tired, possibly an effect of having to attend school and do commissions on a day-to-day basis."
+    }
+    },
+    {
+      "id": "3",
+      "name": "Luciana de Montefio (Lucy)",
+      "image": "assets/icons/lucy_icon.png",
+      "fullImage": "assets/images/lucy_full.png",
+      "rarity": "A",
+      "attribute": "fire",
+      "specialty": "Support",
+      "details": {
+        "description": "Luciana de Montefio, full name Luciana Auxesis Theodoro de Montefio, commonly shortened to simply Lucy and a member of the Sons of Calydon.",
+        "abilities": [
+        {
+            "name": "Basic Attack: Lady's Bat",
+            "description": "Press Basic Attack to launch this attack.\nStrike forward up to 4 times, dealing Physical DMG and Fire DMG.\nWhen Lucy uses her 4th Basic Attack, the currently on-field Guard Boars: Spinning Swing! together.",
+            "energy": 0,
+            "damage": 644
+          },
+          {
+            "name": "Guard Boars: Spinning Swing!!",
+            "description": "When Lucy uses the fourth Basic Attack, or when she gains the Cheer On! status, the guard boars will whirl their baseball bats in a continuous motion, dealing Physical DMG to nearby enemies. If the attack cannot be executed immediately, the guard boars will remember the required number of times to execute it.",
+            "energy": 0,
+            "damage": 592
+          },
+          {
+            "name": "Dodge: Foul Ball!",
+            "description": "Press Dodge to dodge:\nA rapid dodge.\nCharacter is invulnerable while using this skill.",
+            "energy": 0
+          },
+          {
+            "name": "Dash Attack: Fearless Boar!",
+            "description": "Press Basic Attack during a dodge to activate:\nRapidily strikes enemies in front, dealing Physical DMG.",
+            "energy": 0,
+            "damage": 186
+          },
+          {
+            "name": "Assist Follow-Up: Scored a Run!",
+            "description": "Press Basic Attack after a Defensive Assist to activate:\nStrikes enemies in front, dealing Fire DMG.",
+            "energy": 0,
+            "damage": 826,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Special Attack: Solid Hit!",
+            "description": "Press Special Attack to activate:\nRecall a guard boar and use it as a Line Drive. The guard boar will cause an explosion upon hitting enemies or walls, dealing Fire DMG.\nHold Special Attack to activate:\nRecall a guard boar and launch it as a Fly Ball. The guard boar will cause an explosion upon landing, dealing Fire DMG.",
+            "energy": 0,
+            "damage": 117
+          },
+          {
+            "name": "EX Special Attack: Home Run!",
+            "description": "With enough Energy, press EX Special Attack to activate:\nRecall a guard boar and launch it as a Line Drive. The guard boar will cause an explosion upon hitting enemies or walls, dealing massive Fire DMG.\nWith enough Energy, hold EX Special Attack to activate:\nRecall a guard boar and launch it as a Fly Ball. The guard boar will cause an explosion upon landing, dealing massive Fire DMG.",
+            "energy": 0,
+            "damage": 1268,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Cheer On!",
+            "description": "After using EX Special Attack, when a guard boar triggers an explosion, it will apply the Cheer On! status to all allies, Bangboo, and the guard boars themselves. While under the Cheer On! status, allies' ATK increases by X% of Lucy's ATK + Y, up to a maximum of 600. The Cheer On! status lasts for 10s when a Line Drive is hit, and 15s when a Fly Ball is hit. Repeated triggers reset the duration.",
+            "energy": 0,
+            "effect": "Buff(%) 140,150,160,170,180,190,200"
+            
+          },
+          {
+            "name": "Chain Attack: Grand Slam!",
+            "description": "When a Chain Attack is triggered, select the character to activate:\nLucy jumps up and sends a guard boar at enemies in front in a large area, dealing massive Fire DMG. ",
+            "energy": 0,
+            "damage": 338,
+            "effect": "Character is invulnerable while using this skill.\nWhen the skill hits an enemy, it triggers a Quick Assist."
+          },
+          {
+            "name": "Ultimate: Walk-Off Home Run!",
+            "description": "When Decibel Rating is at Maximum, press Ultimate Colored to activate:\nLaunch all guard boars sequentially, dealing massive Fire DMG in a large area to enemies ahead.While using this skill, other squad members recover 10 energy, and the next character to switch in gains an additional 20 energy.",
+            "energy": 0,
+            "damage": 1354,
+            "effect": "Character is invulnerable while using this skill.\nWhen the skill hits an enemy, it triggers a Quick Assist."
+          },
+          {
+            "name": "Core Passive: Crimson Mane Guard",
+            "description": "When Lucy uses her Special Attack or EX Special Attack, a guard boar will join the battle and call in two other guard boars. The guard boars inherit Lucy's ATK, Impact, and Anomaly Proficiency. The Cheer On! buff for the guard boars is increased to X% of the original effect, and their attack frequency is increased.",
+            "energy": 0,
+            "damage": 200
+          },
+          {
+            "name": "Additional Ability: Batter Up!",
+            "description": "When another character in your squad shares the same Attribute or Faction: The guard boars inherit Lucy's CRIT Rate and CRIT DMG.",
+            "energy": 0
+          }
+      ],
+       "stats": {
+          "hp": 1150,
+          "attack": 75,
+          "defense": 50,
+          "speed": 90,
+          "critRate": 10,
+          "critDamage": 150
+        },
+         "backstory": "Despite belonging to an extremely wealthy family where everything was laid-out for her and provided for her, whether it be a proper educationor piano lessons, the one thing Lucy truly desired was the freedom to live her life how she pleased.\n\nAfter taking an Ether Aptitude Test that came back remarkably high, she professed that she wished to become a Hollow Investigator, only to be met with refusal, harsh words, isolation and confinement, and emotional abuse from her family, which led to her deciding to leave to find her own freedom.\n\nShe ended up devising a plan, whereby she would fall victim to a kidnapping of her own creation, in order to create an opening for her to flee her current situation. This plan never came to fruition, however, as Caesar King from the Sons of Calydon would end up defeating the faux kidnappers and 'saving' her in the process. From that point on, Lucy vowed to become a fully fledged member of the Sons of Calydon herself."
+    }
+    },
+        {
+      "id": "4",
+      "name": "Nekomiya Mana (Nekomata)",
+      "image": "assets/icons/nekomata_icon.png",
+      "fullImage": "assets/images/nekomata_full.png",
+      "rarity": "S",
+      "attribute": "Physical",
+      "specialty": "Attack",
+      "details": {
+        "description": "Nekomiya Mana better known by her nickname Nekomata, is a member of the Cunning Hares. She was formerly a member of the Red Fang Gang.",
+        "abilities": [
+        {
+            "name": "Basic Attack: Kitty Slash",
+            "description": "Press Basic Attack to activate:\nUnleashes up to 5 slashes, dealing Physical DMG.",
+            "energy": 0,
+            "damage": 293,
+            "effect": "On the last hit, there is a 33.33% chance to repeat this hit 3 times."
+          },
+          {
+            "name": "Basic Attack: Crimson Blade",
+            "description": "Hold Basic Attack during the first 3 hits of Nekomata's Basic Attack to activate:\nSlashes enemies in front and passes through them, dealing Physical DMG.",
+            "energy": 0,
+            "damage": 170,
+            "effect": "On the last hit, there is a 33.33% chance to repeat this hit 3 times."
+          },
+          {
+            "name": "Dodge: Can't Touch Me-ow~",
+            "description": "Press Dodge to dodge:\nA rapid dodge.",
+            "energy": 0,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Dash Attack: Over Here!",
+            "description": "Press Basic Attack during a dodge to activate:\nSlashes enemies in front, dealing Physical DMG.",
+            "energy": 0,
+            "damage": 83
+          },
+          {
+            "name": "Dodge Counter: Phantom Claws",
+            "description": "Press Basic Attack during a Perfect Dodge to activate:\nSlashes enemies in front, dealing Physical DMG.",
+            "energy": 0,
+            "damage": 539,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Quick Assist: Cat's Paw",
+            "description": "When the on-field character is launched, press Assist to activate:\nSlashes enemies in front, dealing Physical DMG.",
+            "energy": 0,
+            "damage": 223,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Defensive Assist: Desperate Defense",
+            "description": "When the character on field is about to be attacked, press Assist to activate.Parries the enemy's attack, dealing massive Daze.",
+            "energy": 0,
+            "damage": 508,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Assist Follow-Up: Shadow Strike",
+            "description": "Press Basic Attack after a Defensive Assist to activate:\nCharge and slash enemies in front, dealing Physical DMG.",
+            "energy": 0,
+            "damage": 629,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Special Attack: Surprise Attack",
+            "description": "Press Special Attack to activate:\nUnleashes a downward strike, dealing Physical DMG.",
+            "energy": 0,
+            "damage": 111,
+            "effect": "Anti-Interrupt level is increased while using this skill."
+          },
+          {
+            "name": "EX Special Attack: Super Surprise Attack!",
+            "description": "With enough Energy, press EX Special Attack to activate:\nUnleashes a powerful falling slash that deals massive Physical DMG.",
+            "energy": 0,
+            "damage": 1276,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Chain Attack: Claw Swipe",
+            "description": "When a Chain Attack is triggered, select the character to activate:\nUnleashes a powerful slash at enemies ahead in a large area, dealing massive Physical DMG.",
+            "energy": 0,
+            "damage": 1268,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Ultimate: Claw Smash",
+            "description": "When Decibel Rating is at Maximum, press Ultimate Colored to activate:\nUnleashes powerful slashes at enemies ahead in a large area, dealing massive Physical DMG.",
+            "energy": 0,
+            "damage": 3714,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Core Passive: Stealthy Paws",
+            "description": "When Nekomata's Dodge Counter or Quick Assist hits an enemy, her DMG increases by X% for 6s",
+            "energy": 0,
+            "effect": "DMG Increase(%) 30,35,45,50,55,60"
+          },
+          {
+            "name": "Additional Ability: Catwalk",
+            "description": "When another character in your squad shares the same Attribute or Faction:\nAfter any character inflicts Assault, increases the DMG of Nekomata's next EX Special Attack by 35%, stacking up to 2 times.",
+            "energy": 0
+          }
+      ],
+       "stats": {
+          "hp": 1150,
+          "attack": 75,
+          "defense": 50,
+          "speed": 90,
+          "critRate": 10,
+          "critDamage": 150
+        },
+         "backstory": "Nekomiya Mana. Refers to herself as 'Nekomata.'\nA cat Thiren with feline traits, possessing great dexterity when hunting and an insatiable curiosity about the outside world. Sometimes mischievous, she engages in harmless pranks. But when she sets her sights on a target, her feline-like agility and focus are enough to leave others in awe. She's most interested in other people's wallets. Recommendation: Always keep an eye on your wallet when Nekomata is around.\nIn the past, Nekomata was a member of the long-standing Red Fang Gang. Its leader, Miguel Silver, took on a fatherly role in her life. Nonetheless, due to differing beliefs from the gang, she opted to part ways and go it alone.\nFollowing certain encounters involving Nicole and others, she eventually opted to enlist in Gentle House, thus becoming the third member of the team."
+    }
     }
   ]
 }
