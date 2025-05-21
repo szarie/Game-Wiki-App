@@ -5,6 +5,7 @@ class Agent {
   final String? fullImage;
   final String rarity;
   final String attribute;
+  final String specialty;
   final AgentDetails? details;
 
   Agent({
@@ -13,6 +14,7 @@ class Agent {
     required this.image,
     this.fullImage,
     required this.rarity,
+    required this.specialty,
     required this.attribute,
     this.details,
   });
@@ -24,6 +26,7 @@ class Agent {
         image: json['image'],
         fullImage: json['fullImage'],
         rarity: json['rarity'],
+        specialty: json['specialty'],
         attribute: json['attribute'],
         details: json['details'] != null
             ? AgentDetails.fromJson(json['details'])
@@ -37,6 +40,7 @@ class Agent {
       'image': image,
       'fullImage': fullImage,
       'rarity': rarity,
+      'specialty': specialty,
       'attribute': attribute,
       'details': details?.toJson(),
     };
@@ -79,14 +83,14 @@ class AgentDetails {
 class Ability {
   final String name;
   final String description;
-  final int cooldown;
+  final int energy;
   final dynamic damage;
   final dynamic effect;
 
   Ability({
     required this.name,
     required this.description,
-    required this.cooldown,
+    required this.energy,
     this.damage,
     this.effect,
   });
@@ -95,7 +99,7 @@ class Ability {
     return Ability(
       name: json['name'],
       description: json['description'],
-      cooldown: json['cooldown'],
+      energy: json['energy'],
       damage: json['damage'],
       effect: json['effect'],
     );
@@ -105,7 +109,7 @@ class Ability {
     return {
       'name': name,
       'description': description,
-      'cooldown': cooldown,
+      'energy': energy,
       'damage': damage,
       'effect': effect,
     };

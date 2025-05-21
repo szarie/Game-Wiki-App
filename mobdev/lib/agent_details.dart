@@ -117,12 +117,30 @@ class _AgentDetailsPageState extends State<AgentDetailsPage> {
                       // ),
                       SizedBox(height: 20),
                       // Rarity and Attribute
-                      Row(
+                      // Row(
+                      //   children: [
+                      //     _buildAttributeChip('Rarity', widget.agent.rarity),
+                      //     SizedBox(width: 10),
+                      //     _buildAttributeChip(
+                      //         'Attribute', widget.agent.attribute)
+                      //   ],
+                      // ),
+                      // SizedBox(height: 5),
+                      // Row(
+                      //   children: [
+                      //     _buildAttributeChip(
+                      //         'Specialty', widget.agent.specialty),
+                      //   ],
+                      // ),
+                      Wrap(
+                        spacing: 10,
+                        runSpacing: 10,
                         children: [
                           _buildAttributeChip('Rarity', widget.agent.rarity),
-                          SizedBox(width: 10),
                           _buildAttributeChip(
                               'Attribute', widget.agent.attribute),
+                          _buildAttributeChip(
+                              'Specialty', widget.agent.specialty),
                         ],
                       ),
                       //description
@@ -222,6 +240,7 @@ class _AgentDetailsPageState extends State<AgentDetailsPage> {
 
 Widget _buildAttributeChip(String label, String value) {
   Color chipColor = _getAttributeColor(value);
+  String attributeIconPath = _getattributeIconPath(value);
 
   return Container(
     padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
@@ -241,13 +260,23 @@ Widget _buildAttributeChip(String label, String value) {
           ),
         ),
         Text(
-          value,
+          value == 'S' || value == 'A' ? '' : value,
           style: TextStyle(
             fontSize: 14,
+            color: chipColor,
             fontWeight: FontWeight.bold,
-            color: Colors.white,
           ),
         ),
+        SizedBox(
+          width: 18,
+          height: 18,
+          child: Image.asset(
+            attributeIconPath,
+            errorBuilder: (context, error, stackTrace) {
+              return Icon(Icons.error, size: 16, color: chipColor);
+            },
+          ),
+        )
       ],
     ),
   );
@@ -275,20 +304,21 @@ Widget _buildAbilityCard(Ability ability) {
                 color: Colors.white,
               ),
             ),
-            Container(
-              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-              decoration: BoxDecoration(
-                color: Colors.redAccent.withOpacity(0.2),
-                borderRadius: BorderRadius.circular(12),
-              ),
-              child: Text(
-                'CD: ${ability.cooldown}',
-                style: TextStyle(
-                  fontSize: 12,
-                  color: Colors.redAccent,
+            if (ability.energy > 0)
+              Container(
+                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                decoration: BoxDecoration(
+                  color: Colors.redAccent.withOpacity(0.2),
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Text(
+                  'Energy: ${ability.energy}',
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: Colors.redAccent,
+                  ),
                 ),
               ),
-            ),
           ],
         ),
         SizedBox(height: 8),
@@ -393,10 +423,10 @@ Color _getAttributeColor(String value) {
     case 'ice':
     case 'frost':
       return Colors.lightBlueAccent;
-    case 'lightning':
+    case 'electric':
       return Colors.yellowAccent;
-    case 'dark':
-      return Colors.purpleAccent;
+    case 'physical':
+      return const Color.fromARGB(255, 193, 193, 193);
     case 'neutral':
       return Colors.grey;
     case 'star':
@@ -409,8 +439,51 @@ Color _getAttributeColor(String value) {
       return Color.fromARGB(255, 255, 191, 64);
     case 'a':
       return Color.fromARGB(255, 172, 36, 240);
+    case 'anomaly':
+      return Color.fromARGB(255, 255, 232, 195);
+    case 'attack':
+      return Color.fromARGB(255, 255, 232, 195);
+    case 'defense':
+      return Color.fromARGB(255, 255, 232, 195);
+    case 'stun':
+      return Color.fromARGB(255, 255, 232, 195);
+    case 'support':
+      return Color.fromARGB(255, 255, 232, 195);
     default:
       return Colors.grey;
+  }
+}
+
+String _getattributeIconPath(String attribute) {
+  switch (attribute.toLowerCase()) {
+    case 'fire':
+      return 'assets/attribute/fire.png';
+    case 'ice':
+      return 'assets/attribute/ice.png';
+    case 'frost':
+      return 'assets/attribute/frost.png';
+    case 'electric':
+      return 'assets/attribute/electric.png';
+    case 'physical':
+      return 'assets/attribute/physical.png';
+    case 'ether':
+      return 'assets/attribute/ether.png';
+    case 's':
+      return 'assets/icons/S.png';
+    case 'a':
+      return 'assets/icons/A.png';
+    case 'anomaly':
+      return 'assets/specialty/anomaly.png';
+    case 'attack':
+      return 'assets/specialty/attack.png';
+    case 'defense':
+      return 'assets/specialty/defense.png';
+    case 'stun':
+      return 'assets/specialty/stun.png';
+    case 'support':
+      return 'assets/specialty/support.png';
+    default:
+      return 'assets/attribute/unknown.png';
   }
 }
 

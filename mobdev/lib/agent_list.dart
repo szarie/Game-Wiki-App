@@ -161,22 +161,22 @@ class RarityIcon extends StatelessWidget {
     // IconData iconData;
     // Color iconColor;
 
-    String imagePath;
+    String rankPath;
     switch (rarity.toLowerCase()) {
       case 'a':
         // iconData = Icons.star;
         // iconColor = Colors.amber;
-        imagePath = 'assets/icons/A.png';
+        rankPath = 'assets/icons/A.png';
         break;
       case 's':
         // iconData = Icons.flash_on;
         // iconColor = Colors.yellow;
-        imagePath = 'assets/icons/S.png';
+        rankPath = 'assets/icons/S.png';
         break;
       default:
         // iconData = Icons.star_border;
         // iconColor = Colors.grey;
-        imagePath = 'assets/icons/unknown.png';
+        rankPath = 'assets/icons/unknown.png';
     }
 
     return Container(
@@ -185,11 +185,11 @@ class RarityIcon extends StatelessWidget {
         shape: BoxShape.circle,
       ),
       padding: const EdgeInsets.all(3),
-      child: Image.asset(imagePath, width: 16, height: 16,
+      child: Image.asset(rankPath, width: 16, height: 16,
           errorBuilder: (context, error, stackTrace) {
         return Icon(
-          Icons.star_border,
-          color: Colors.grey,
+          Icons.error,
+          color: Colors.red,
           size: 16,
         );
       }),
@@ -210,39 +210,29 @@ class AttributeIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    IconData iconData;
-    Color iconColor;
-
-    switch (attribute) {
+    String attributePath;
+    switch (attribute.toLowerCase()) {
       case 'fire':
-        iconData = Icons.local_fire_department;
-        iconColor = Colors.deepOrange;
+        attributePath = 'assets/attribute/fire.png';
         break;
       case 'ice':
-        iconData = Icons.ac_unit;
-        iconColor = Colors.lightBlueAccent;
+        attributePath = 'assets/attribute/ice.png';
         break;
       case 'frost':
-        iconData = Icons.ac_unit;
-        iconColor = Colors.lightBlueAccent;
+        attributePath = 'assets/attribute/frost.png';
         break;
-      case 'lightning':
-        iconData = Icons.flash_on;
-        iconColor = Colors.yellowAccent;
+      case 'physical':
+        attributePath = 'assets/attribute/physical.png';
         break;
-      case 'dark':
-        iconData = Icons.nights_stay;
-        iconColor = Colors.purpleAccent;
+      case 'electric':
+        attributePath = 'assets/electric/lightning.png';
         break;
-      case 'neutral':
-        iconData = Icons.shield;
-        iconColor = Colors.grey;
+      case 'ether':
+        attributePath = 'assets/attribute/ether.png';
         break;
       default:
-        iconData = Icons.help_outline;
-        iconColor = Colors.grey;
+        attributePath = 'assets/icons/unknown.png';
     }
-
     return Container(
       decoration: BoxDecoration(
         color: Color.fromARGB(
@@ -250,11 +240,14 @@ class AttributeIcon extends StatelessWidget {
         shape: BoxShape.circle,
       ),
       padding: const EdgeInsets.all(3),
-      child: Icon(
-        iconData,
-        color: iconColor,
-        size: 16,
-      ),
+      child: Image.asset(attributePath, width: 16, height: 16,
+          errorBuilder: (context, error, stackTrace) {
+        return Icon(
+          Icons.error,
+          color: Colors.red,
+          size: 16,
+        );
+      }),
     );
   }
 }
