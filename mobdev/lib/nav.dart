@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-// Import other page files
 
 class BasePage extends StatefulWidget {
   final int currentIndex;
@@ -85,7 +84,7 @@ class _BasePageState extends State<BasePage> {
                     if (_currentIndex != 0) {
                       Navigator.pushReplacementNamed(
                         context,
-                        '/', // Home page route
+                        '/home', // Home page route
                       );
                     }
                   },
