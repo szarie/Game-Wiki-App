@@ -79,10 +79,10 @@ class _FavoritePageState extends State<FavoritePage> {
                         ),
                         SizedBox(height: 8),
                         Text(
-                          'Add agents to you favorite by clicking the heart icon',
+                          'Add agents to you favorite by clicking the heart icon on the top right of the agent details.',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                            color: Color.fromARGB(255, 255, 255, 255),
+                            color: Color.fromARGB(255, 95, 95, 95),
                           ),
                         )
                       ],
