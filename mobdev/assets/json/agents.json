@@ -238,7 +238,7 @@
     },
     {
       "id": "3",
-      "name": "Luciana de Montefio (Lucy)",
+      "name": "Lucy",
       "image": "assets/icons/lucy_icon.png",
       "fullImage": "assets/images/lucy_full.png",
       "rarity": "A",
@@ -334,9 +334,9 @@
          "backstory": "Despite belonging to an extremely wealthy family where everything was laid-out for her and provided for her, whether it be a proper educationor piano lessons, the one thing Lucy truly desired was the freedom to live her life how she pleased.\n\nAfter taking an Ether Aptitude Test that came back remarkably high, she professed that she wished to become a Hollow Investigator, only to be met with refusal, harsh words, isolation and confinement, and emotional abuse from her family, which led to her deciding to leave to find her own freedom.\n\nShe ended up devising a plan, whereby she would fall victim to a kidnapping of her own creation, in order to create an opening for her to flee her current situation. This plan never came to fruition, however, as Caesar King from the Sons of Calydon would end up defeating the faux kidnappers and 'saving' her in the process. From that point on, Lucy vowed to become a fully fledged member of the Sons of Calydon herself."
     }
     },
-        {
+    {
       "id": "4",
-      "name": "Nekomiya Mana (Nekomata)",
+      "name": "Nekomata",
       "image": "assets/icons/nekomata_icon.png",
       "fullImage": "assets/images/nekomata_full.png",
       "rarity": "S",
@@ -362,6 +362,121 @@
           {
             "name": "Dodge: Can't Touch Me-ow~",
             "description": "Press Dodge to dodge:\nA rapid dodge.",
+            "energy": 0,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Dash Attack: Over Here!",
+            "description": "Press Basic Attack during a dodge to activate:\nSlashes enemies in front, dealing Physical DMG.",
+            "energy": 0,
+            "damage": 83
+          },
+          {
+            "name": "Dodge Counter: Phantom Claws",
+            "description": "Press Basic Attack during a Perfect Dodge to activate:\nSlashes enemies in front, dealing Physical DMG.",
+            "energy": 0,
+            "damage": 539,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Quick Assist: Cat's Paw",
+            "description": "When the on-field character is launched, press Assist to activate:\nSlashes enemies in front, dealing Physical DMG.",
+            "energy": 0,
+            "damage": 223,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Defensive Assist: Desperate Defense",
+            "description": "When the character on field is about to be attacked, press Assist to activate.Parries the enemy's attack, dealing massive Daze.",
+            "energy": 0,
+            "damage": 508,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Assist Follow-Up: Shadow Strike",
+            "description": "Press Basic Attack after a Defensive Assist to activate:\nCharge and slash enemies in front, dealing Physical DMG.",
+            "energy": 0,
+            "damage": 629,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Special Attack: Surprise Attack",
+            "description": "Press Special Attack to activate:\nUnleashes a downward strike, dealing Physical DMG.",
+            "energy": 0,
+            "damage": 111,
+            "effect": "Anti-Interrupt level is increased while using this skill."
+          },
+          {
+            "name": "EX Special Attack: Super Surprise Attack!",
+            "description": "With enough Energy, press EX Special Attack to activate:\nUnleashes a powerful falling slash that deals massive Physical DMG.",
+            "energy": 0,
+            "damage": 1276,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Chain Attack: Claw Swipe",
+            "description": "When a Chain Attack is triggered, select the character to activate:\nUnleashes a powerful slash at enemies ahead in a large area, dealing massive Physical DMG.",
+            "energy": 0,
+            "damage": 1268,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Ultimate: Claw Smash",
+            "description": "When Decibel Rating is at Maximum, press Ultimate Colored to activate:\nUnleashes powerful slashes at enemies ahead in a large area, dealing massive Physical DMG.",
+            "energy": 0,
+            "damage": 3714,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Core Passive: Stealthy Paws",
+            "description": "When Nekomata's Dodge Counter or Quick Assist hits an enemy, her DMG increases by X% for 6s",
+            "energy": 0,
+            "effect": "DMG Increase(%) 30,35,45,50,55,60"
+          },
+          {
+            "name": "Additional Ability: Catwalk",
+            "description": "When another character in your squad shares the same Attribute or Faction:\nAfter any character inflicts Assault, increases the DMG of Nekomata's next EX Special Attack by 35%, stacking up to 2 times.",
+            "energy": 0
+          }
+      ],
+       "stats": {
+          "hp": 1150,
+          "attack": 75,
+          "defense": 50,
+          "speed": 90,
+          "critRate": 10,
+          "critDamage": 150
+        },
+         "backstory": "Nekomiya Mana. Refers to herself as 'Nekomata.'\nA cat Thiren with feline traits, possessing great dexterity when hunting and an insatiable curiosity about the outside world. Sometimes mischievous, she engages in harmless pranks. But when she sets her sights on a target, her feline-like agility and focus are enough to leave others in awe. She's most interested in other people's wallets. Recommendation: Always keep an eye on your wallet when Nekomata is around.\nIn the past, Nekomata was a member of the long-standing Red Fang Gang. Its leader, Miguel Silver, took on a fatherly role in her life. Nonetheless, due to differing beliefs from the gang, she opted to part ways and go it alone.\nFollowing certain encounters involving Nicole and others, she eventually opted to enlist in Gentle House, thus becoming the third member of the team."
+    }
+    },
+    {
+      "id": "5",
+      "name": "Astra Yao",
+      "image": "assets/icons/astra_icon.png",
+      "fullImage": "assets/images/astra_full.png",
+      "rarity": "S",
+      "attribute": "Ether",
+      "specialty": "Support",
+      "details": {
+        "description": "Astra Yao is a multitalented celebrity mainly known for her singing prowess and impact she had on Ridu's music scene.",
+        "abilities": [
+        {
+            "name": "Basic Attack: 'Capriccio'",
+            "description": "Press Basic Attack to activate:\nPerform up to three attacks forward, dealing Ether DMG.\nDuring the 3rd-hit, hold Basic Attack to charge, drawing enemies in and expanding the attack range for a stronger attack.\nAfter using other skills, hold Basic Attack to initiate the 3rd-hit directly.",
+            "energy": 0,
+            "damage": 641
+          },
+          {
+            "name": "Basic Attack: Interlude",
+            "description": "While in the Idyllic Cadenza state, press Basic Attack to activate:\nRelease Tremolo forward to attack, dealing Ether DMG.",
+            "energy": 0,
+            "damage": 130,
+            "effect": "A Quick Assist will be triggered when this skill hits an enemy."
+          },
+          {
+            "name": "Basic Attack: Chorus",
+            "description": "While in the Idyllic Cadenza state, press Basic Attack during a Perfect Dodge to activate:\nLaunch multiple Tremolo attacks at enemies in front, dealing massive Ether DMG.",
             "energy": 0,
             "effect": "Character is invulnerable while using this skill."
           },
