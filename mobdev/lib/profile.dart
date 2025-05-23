@@ -4,6 +4,7 @@ import 'package:mobdev/agent.dart';
 import 'package:mobdev/fav_manager.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
+import 'package:mobdev/questionscreen.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
 class UserProfile {
@@ -57,6 +58,21 @@ class _ProfilePageState extends State<ProfilePage> {
   void initState() {
     super.initState();
     _loadProfileAndFavorites();
+  }
+
+  Future<void> _quiz() async {
+    Navigator.pushNamedAndRemoveUntil(context, '/quiz', (route) => false);
+  }
+
+  Future<void> _logout() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool('isLoggedIn', false);
+
+    // Clear any other saved user data if needed
+    // await prefs.remove('username');
+    // await prefs.remove('password');
+
+    Navigator.pushNamedAndRemoveUntil(context, '/', (route) => false);
   }
 
   Future<void> _loadProfileAndFavorites() async {
@@ -275,6 +291,13 @@ class _ProfilePageState extends State<ProfilePage> {
   Widget build(BuildContext context) {
     return BasePage(
       currentIndex: 3,
+      actions: [
+        IconButton(
+          icon: Icon(Icons.logout),
+          onPressed: _logout,
+          tooltip: 'Logout',
+        ),
+      ],
       child: _isLoading
           ? Center(child: CircularProgressIndicator())
           : Container(
@@ -344,6 +367,17 @@ class _ProfilePageState extends State<ProfilePage> {
                           onPressed: _editProfile,
                           icon: Icon(Icons.edit),
                           label: Text('Edit Profile'),
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor:
+                                const Color.fromARGB(255, 100, 161, 64),
+                            foregroundColor: Colors.white,
+                          ),
+                        ),
+                        SizedBox(height: 10),
+                        ElevatedButton.icon(
+                          onPressed: _quiz,
+                          icon: Icon(Icons.question_answer),
+                          label: Text('Take Quiz'),
                           style: ElevatedButton.styleFrom(
                             backgroundColor:
                                 const Color.fromARGB(255, 100, 161, 64),
