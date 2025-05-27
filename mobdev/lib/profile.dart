@@ -4,7 +4,6 @@ import 'package:mobdev/agent.dart';
 import 'package:mobdev/fav_manager.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
-import 'package:mobdev/questionscreen.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
 class UserProfile {
