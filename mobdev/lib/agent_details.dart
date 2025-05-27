@@ -41,7 +41,7 @@ class _AgentDetailsPageState extends State<AgentDetailsPage> {
   Widget build(BuildContext context) {
     return BasePage(
       currentIndex: 1,
-      title: 'Agent Details',
+      title: '',
       actions: [
         IconButton(
             icon: Icon(
@@ -424,17 +424,12 @@ Color _getAttributeColor(String value) {
     case 'frost':
       return Colors.lightBlueAccent;
     case 'electric':
-      return Colors.yellowAccent;
+      return const Color.fromARGB(255, 61, 118, 252);
     case 'physical':
-      return const Color.fromARGB(255, 193, 193, 193);
-    case 'neutral':
-      return Colors.grey;
-    case 'star':
-      return Colors.amber;
-    case 'gear':
-      return Colors.teal;
-    case 'spark':
-      return Colors.cyanAccent;
+      return const Color.fromARGB(255, 232, 205, 41);
+    case 'ether':
+      return const Color.fromARGB(255, 138, 87, 214);
+
     case 's':
       return Color.fromARGB(255, 255, 191, 64);
     case 'a':
