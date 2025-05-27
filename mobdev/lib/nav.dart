@@ -5,6 +5,8 @@ class BasePage extends StatefulWidget {
   final Widget child;
   final String? title;
   final List<Widget>? actions;
+  final Widget? appBarLeading;
+  final bool showAppBar;
 
   const BasePage({
     Key? key,
@@ -12,6 +14,8 @@ class BasePage extends StatefulWidget {
     required this.child,
     this.title,
     this.actions,
+    this.appBarLeading,
+    this.showAppBar = true,
   }) : super(key: key);
 
   @override
@@ -48,20 +52,23 @@ class _BasePageState extends State<BasePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: widget.child,
-      appBar: AppBar(
-        title: Text(_getTitle(),
-            style: TextStyle(
-              color: const Color.fromARGB(255, 255, 255, 255),
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-            )),
-        backgroundColor: const Color.fromARGB(255, 33, 33, 33),
-        centerTitle: true,
-        iconTheme: const IconThemeData(
-          color: Color.fromARGB(255, 156, 255, 100), // Change icon color
-        ),
-        actions: widget.actions,
-      ),
+      appBar: widget.showAppBar
+          ? AppBar(
+              title: Text(_getTitle(),
+                  style: TextStyle(
+                    color: const Color.fromARGB(255, 255, 255, 255),
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  )),
+              backgroundColor: const Color.fromARGB(255, 33, 33, 33),
+              centerTitle: true,
+              iconTheme: const IconThemeData(
+                color: Color.fromARGB(255, 156, 255, 100), // Change icon color
+              ),
+              actions: widget.actions,
+              leading: widget.appBarLeading,
+            )
+          : null,
       bottomNavigationBar: BottomAppBar(
         color: const Color.fromARGB(255, 27, 26, 26),
         child: Center(
