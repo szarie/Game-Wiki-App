@@ -25,13 +25,6 @@ class ResultsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back,
-              color: Color.fromARGB(255, 156, 255, 100)), // Change icon color
-          onPressed: () {
-            Navigator.pushReplacementNamed(context, '/profile');
-          },
-        ),
         title: const Text('Results'),
         backgroundColor: Colors.black,
       ),
@@ -100,7 +93,7 @@ class ResultsScreen extends StatelessWidget {
                       style: TextStyle(
                           color: Colors.black, fontWeight: FontWeight.bold)),
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color.fromARGB(255, 156, 255, 100),
+                    backgroundColor: Colors.yellowAccent,
                     padding: const EdgeInsets.symmetric(
                         horizontal: 40, vertical: 15),
                   ),
