@@ -9,7 +9,7 @@
       "attribute": "Frost",
       "specialty": "Anomaly",
       "details": {
-        "description": "Chief of Hollow Special Operations Section 6. She has been awarded the title of 'Void Hunter', and is the youngest person in New Eridu to bear such a title.",
+        "description": "The youngest Void Hunter to date and Chief of Hollow Special Operations Section 6, Hoshimi Miyabi is a woman who defies the status quo and uses Tailless, her family heirloom's cursed blade, to protect the city of New Eridu and unveil the corruption within it. Although she's the chief of Section 6, Miyabi does little work related to it, with bureaucratic tasks being handled by Deputy Chief Tsukishiro Yanagi.\n\nMiyabi has a great obsession with training, finding numerous ways to classify mundane tasks as a form of training, such as opening surprise boxes, watching films, and not attending meetings. The intensity of some of her training leads her to black out and enter a trance-like state, where's she's only capable of parroting the last word said by another.",
         "abilities": [
           {
             "name": "Basic Attack: Kazahana",
@@ -115,7 +115,7 @@
           "critRate": 10,
           "critDamage": 150
         },
-        "backstory": "The youngest Void Hunter to date and Chief of Hollow Special Operations Section 6, Hoshimi Miyabi is a woman who defies the status quo and uses Tailless, her family heirloom's cursed blade, to protect the city of New Eridu and unveil the corruption within it. Although she's the chief of Section 6, Miyabi does little work related to it, with bureaucratic tasks being handled by Deputy Chief Tsukishiro Yanagi Miyabi has a great obsession with training, finding numerous ways to classify mundane tasks as a form of training, such as opening surprise boxes,watching films,and not attending meetings.The intensity of some of her training leads her to black out and enter a trance-like state, where's she's only capable of parroting the last word said by another."
+        "backstory": "Born into the famed Hoshimi family to Souichirou and an unnamed mother, Miyabi was expected to be another in the proud line of warriors the family from the moment she chose to hold a toy sword during Erabitori, the traditional ceremony of putting a toddler in front of many objects to foretell their future careers and personalities.\n\nMiyabi's mother would do her best to deter her daughter from following down the path of her ancestors and ensure she would live an ordinary life. These included giving young Miyabi unique trainings like eating all her vegetables, sleeping eight hours, and remembering all their family member’s names, while also her horseback riding, archery, calligraphy, and how to play an instrument.\n\nHowever, Hollow Zero's sudden expansion destroyed the Hoshimi family home and corrupted many of its members, including Miyabi's mother. Severely corrupted, she handed Miyabi Tailless and described her the last training: to use their family blade to end her life before she could mutate into an Ethereal. After mercifully killing her mother, under the influence of the katana's power, Miyabi entered a frenzy state and slayed countless Ethereals, event which would later be addressed by her father as an 'accident.'\n\nYears later, Miyabi would hold Tailless once more, with the desire of protecting the citizens of New Eridu by becoming an officer. Her father supported her daughter's plan by crafting an advanced scabbard able to seal the cursed katana's power.\n\nDuring her time at the Public Security Training Academy, Miyabi befriended fellow classmate Zhu Yuan and almost lost her family's katana to a scam by Nicole Demara, but was soon given it back by the streetwise woman. After graduating, Miyabi enlisted in H.A.N.D. and quickly became an executive officer.\n\nHoshimi Miyabi was crucial in the successful containment of the Argos Hollow by managing to destroy the massive ethereal Lerna in under three minutes, saving the life of around 208 people. This feat rewarded Miyabi with the esteemed title of Void Hunter, but instead of attending the ceremony, she took advantage of her new position to transfer fellow executive officer Asaba Harumasa and Defense Force member Tsukishiro Yanagi to the newly founded Hollow Special Operations Section 6, which she created to uncover and destroy the roots of corruption within New Eridu and find the true culprits behind the Fall of the Old Capital, in order to avenge her late mother."
       }
     },
     {
@@ -481,27 +481,25 @@
             "effect": "Character is invulnerable while using this skill."
           },
           {
-            "name": "Dash Attack: Over Here!",
-            "description": "Press Basic Attack during a dodge to activate:\nSlashes enemies in front, dealing Physical DMG.",
+            "name": "Basic Attack: Finale",
+            "description": "While in the Idyllic Cadenza state, hold Basic Attack to activate:\nRelease Tremolo forward to attack, dealing Ether DMG and exit the Idyllic Cadenza state.Upon activation of the skill, it grants the buff from Core Passive: 'Graceful Andante'.\nWith enough Energy, consumes Energy to follow up with 1 Tremolo and 3 Tone Clusters. This Tremolo attack released is considered an EX Special Attack.",
             "energy": 0,
-            "damage": 83
+            "damage": 130
           },
           {
-            "name": "Dodge Counter: Phantom Claws",
-            "description": "Press Basic Attack during a Perfect Dodge to activate:\nSlashes enemies in front, dealing Physical DMG.",
+            "name": "Dodge: 'Mini Waltz'",
+            "description": "Press Dodge to activate:\nA quick dash dodge.",
             "energy": 0,
-            "damage": 539,
             "effect": "Character is invulnerable while using this skill."
           },
           {
-            "name": "Quick Assist: Cat's Paw",
-            "description": "When the on-field character is launched, press Assist to activate:\nSlashes enemies in front, dealing Physical DMG.",
+            "name": "Dash Attack: 'Lunar Eclipse Melody'",
+            "description": "Press Basic Attack during a dodge to activate:\nAttack ahead, dealing Ether DMG.\nWhen triggered, dragging the joystick allows movement in the corresponding direction.",
             "energy": 0,
-            "damage": 223,
-            "effect": "Character is invulnerable while using this skill."
+            "damage": 191
           },
           {
-            "name": "Defensive Assist: Desperate Defense",
+            "name": "Dodge Counter: 'Umbrella Waltz'",
             "description": "When the character on field is about to be attacked, press Assist to activate.Parries the enemy's attack, dealing massive Daze.",
             "energy": 0,
             "damage": 508,
@@ -509,50 +507,76 @@
           },
           {
             "name": "Assist Follow-Up: Shadow Strike",
-            "description": "Press Basic Attack after a Defensive Assist to activate:\nCharge and slash enemies in front, dealing Physical DMG.",
+            "description": "Press Basic Attack during a Perfect Dodge to activate:\nAttack enemies in front, dealing Ether DMG.",
             "energy": 0,
-            "damage": 629,
+            "damage": 260,
             "effect": "Character is invulnerable while using this skill."
           },
           {
-            "name": "Special Attack: Surprise Attack",
-            "description": "Press Special Attack to activate:\nUnleashes a downward strike, dealing Physical DMG.",
+            "name": "Quick Assist: 'One Luminous Sky'",
+            "description": "When the active character is launched, press Assist Attack to activate:\nAttack enemies in front, dealing Ether DMG.",
             "energy": 0,
-            "damage": 111,
-            "effect": "Anti-Interrupt level is increased while using this skill."
-          },
-          {
-            "name": "EX Special Attack: Super Surprise Attack!",
-            "description": "With enough Energy, press EX Special Attack to activate:\nUnleashes a powerful falling slash that deals massive Physical DMG.",
-            "energy": 0,
-            "damage": 1276,
+            "damage": 130,
             "effect": "Character is invulnerable while using this skill."
           },
           {
-            "name": "Chain Attack: Claw Swipe",
-            "description": "When a Chain Attack is triggered, select the character to activate:\nUnleashes a powerful slash at enemies ahead in a large area, dealing massive Physical DMG.",
-            "energy": 0,
-            "damage": 1268,
+            "name": "Evasive Assist: 'Two Hearts'",
+            "description": "When the on-field character is about to be attacked, press Assist Attack to activate:\nDodges the enemy's attack and activates Vital View.",
+            "energy": 0,            
             "effect": "Character is invulnerable while using this skill."
           },
           {
-            "name": "Ultimate: Claw Smash",
-            "description": "When Decibel Rating is at Maximum, press Ultimate Colored to activate:\nUnleashes powerful slashes at enemies ahead in a large area, dealing massive Physical DMG.",
+            "name": "Assist Follow-Up: 'Three Lifetimes of Fate'",
+            "description": "Press Basic Attack after an Evasive Assist to activate:\nRelease an energy beam forward, dealing Ether DMG.",
             "energy": 0,
-            "damage": 3714,
+            "damage": 720,
             "effect": "Character is invulnerable while using this skill."
           },
           {
-            "name": "Core Passive: Stealthy Paws",
-            "description": "When Nekomata's Dodge Counter or Quick Assist hits an enemy, her DMG increases by X% for 6s",
+            "name": "Special Attack: 'Windchimes & Oaths'",
+            "description": "Press Special Attack to activate:\nQuickly move away, then release Tremolo, dealing Ether DMG, and enter the Idyllic Cadenza state.\nDuring activation, dragging the joystick enables movement in the direction held.\nHold Special Attack to charge during activation, drawing enemies in, and follow up with 1 to 4 Tremolos depending on the charge duration.\nA Quick Assist will be triggered when this skill hits an enemy.",
             "energy": 0,
-            "effect": "DMG Increase(%) 30,35,45,50,55,60"
+            "damage": 115,
+            "effect": "Character is invulnerable when quickly moving away."
           },
           {
-            "name": "Additional Ability: Catwalk",
-            "description": "When another character in your squad shares the same Attribute or Faction:\nAfter any character inflicts Assault, increases the DMG of Nekomata's next EX Special Attack by 35%, stacking up to 2 times.",
+            "name": "Idyllic Cadenza",
+            "description": "After entering the Idyllic Cadenza state, Astra Yao increases all squad members' DMG by X% and CRIT DMG by Y%.\nWhile in the Idyllic Cadenza state, Astra Yao cannot move, but pressing Basic Attack will activate Basic Attack: Interlude, and pressing Dodge will activate a dodge. After triggering a Perfect Dodge, press Basic Attack to activate Basic Attack: Chorus. While in this state, Astra Yao's Anti-Interrupt Level is increased, and the DMG she takes is reduced by 40%. After switching to another character, Astra Yao will remain on the field and become Invulnerable. When switching back to her, she will automatically follow up with Special Attack: 'Windchimes & Oaths'. During this state, hold Basic Attack to activate Basic Attack: Finale, exiting the Idyllic Cadenza state, or hold Dodge to exit the Idyllic Cadenza state directly.",
+            "energy": 0,
+            "effect": "For Skill Scalings 'Squad DMG Increase' (X%) and 'Squad CRIT DMG Increase' (Y%), refer to Special Attack: 'Windchimes & Oaths'."
+          },
+          {
+            "name": "Chord",
+            "description": "For every 25 Energy, Astra Yao will have 1 Chord.\nWhile in the Idyllic Cadenza state, when Astra Yao has Chords, a Quick Assist can be triggered in the following situations:\n•When the active character's attack hits an enemy, once per 3s.\n•When the active character's heavy attack hits an enemy, once per 1s.\n\nWhen other squad members switch in through a Quick Assist, Chain Attack, Defensive Assist, or Evasive Assist, Astra Yao will consume 25 Energy and release 1 Tremolo to attack. This Tremolo attack released is considered an EX Special Attack. After triggering a Quick Assist, quickly press Assist Attack to switch characters and trigger a Precise Assist, causing Astra Yao to follow up with 3 Tone Clusters to attack. When other squad members switch in through a Chain Attack, Defensive Assist, or Evasive Assist, it will automatically trigger a Precise Assist.",
+            "energy": 25,
+            "damage": 109           
+          },
+          {
+            "name": "Chain Attack: Tipsy Concerto'",
+            "description": "When a Chain Attack is triggered, select the character to activate:\nUse song to channel energy into a blast, dealing massive Ether DMG Character is invulnerable while using this skill.",
+            "energy": 0,
+            "damage": 1588,
+            "effect": "After the skill, Astra Yao enters the Idyllic Cadenza state."    
+          },
+          {
+            "name": "Ultimate: 'Fantasian Sonata'",
+            "description": "When Decibel Rating is at Maximum, press Ultimate Colored to activate:\nUse song to channel energy into a blast, dealing massive Ether DMG and restoring X HP to all squad members.",
+            "energy": 0,
+            "damage": 4632,
+            "effect": "Character is invulnerable while using this skill.\nAfter the skill, Astra Yao enters the Idyllic Cadenza state.\nAfter the skill, the next two Quick Assists will be replaced by Chain Attacks."    
+          },
+          {
+            "name": "Core Passive: 'Graceful Andante'",
+            "description": "During the Idyllic Cadenza state, when other squad members switch in through a Quick Assist, Chain Attack, Defensive Assist, or Evasive Assist, and when Astra Yao expends Energy to release Tremolo to attack, both Astra Yao and the incoming character's ATK are increased. The increase is equal to X% of Astra Yao's initial ATK, up to a maximum of 1,200. The effect lasts for 20s and can be extended up to 30s with repeated triggers.",
+            "energy": 0,
+            "effect": "%of Astra's ATK: 22,24,26,28,30,32,35"    
+          },
+          {
+            "name": "Additional Ability: 'Moonlit Frenzy'",
+            "description": "When another character in your squad is an Attack or Anomaly character:\nWhen Energy is consumed to trigger a Precise Assist or Basic Attack: Finale, Astra Yao will additionally follow up with 1 Tremolo and 3 Tone Clusters.",
             "energy": 0
-          }
+          }        
+          
       ],
        "stats": {
           "hp": 1150,
@@ -562,8 +586,829 @@
           "critRate": 10,
           "critDamage": 150
         },
-         "backstory": "Nekomiya Mana. Refers to herself as 'Nekomata.'\nA cat Thiren with feline traits, possessing great dexterity when hunting and an insatiable curiosity about the outside world. Sometimes mischievous, she engages in harmless pranks. But when she sets her sights on a target, her feline-like agility and focus are enough to leave others in awe. She's most interested in other people's wallets. Recommendation: Always keep an eye on your wallet when Nekomata is around.\nIn the past, Nekomata was a member of the long-standing Red Fang Gang. Its leader, Miguel Silver, took on a fatherly role in her life. Nonetheless, due to differing beliefs from the gang, she opted to part ways and go it alone.\nFollowing certain encounters involving Nicole and others, she eventually opted to enlist in Gentle House, thus becoming the third member of the team."
+         "backstory": "'The Queen' of New Eridu, Astra Yao is a multitalented celebrity mainly known for her singing prowess and impact she had on Ridu's music scene. Examples of her musical prowess include 'The Ultimate Voice,' which led to a live album from that concert and a videotape labeled 'f.f.' being released afterwards,, the album 'Monologue,' with the final song being a compilation of interviews she did for the 'Jealous' Magazine, and 'Stars of Lyra,' Astra's first album she recorded before her big debut.\n\nOutside of her stage presence, Astra Yao is a relatively hapless and bubbly young lady, always eager to explore New Eridu, meet fans or spend time with the Legendary Proxy Phaethon. Because of this, she's semi-dependent on her manager/bodyguard/close friend Evelyn Chevalier for daily life.\n\nAstra is currently signed with Odeum HAE, a record label that is under the entertainment subsidiary of High Ambitions, one of the groups in the TOPS Alliance."
     }
+    },
+    {
+      "id": "6",
+      "name": "Corin Wickes",
+      "image": "assets/icons/corin_icon.png",
+      "fullImage": "assets/images/corin_full.png",
+      "rarity": "A",
+      "attribute": "Physical",
+      "specialty": "Attack",
+      "details": {
+        "description": "Corin Wickes is a young maid working for Victoria Housekeeping Co. ",
+        "abilities": [
+        {
+            "name": "Basic Attack: Wipeout",
+            "description": "Press Basic Attack to activate:\nUnleashes up to 5 slashes, dealing Physical DMG.\nRepeatedly press or hold the button during the 3rd and 5th hits to extend the chainsaw slash attack.",
+            "energy": 0,
+            "damage": 995
+          },
+          {
+            "name": "Dodge: Shoo!",
+            "description": "Press Dodge to dodge:\nA rapid dodge.",
+            "energy": 0,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Dash Attack: Oopsy-Daisy!",
+            "description": "Press Basic Attack during a dodge to activate:\nSlashes enemies in front, dealing Physical DMG.\nRepeatedly press or hold to enter Crouching Shot to extend the attack duration.\nRepeatedly press or hold the button to extend the chainsaw attack's duration.",
+            "energy": 0,
+            "damage": 228
+          },
+          {
+            "name": "Dodge Counter: Nope!",
+            "description": "Press Basic Attack during a Perfect Dodge to activate:\nSlashes enemies in front, before detonating her chainsaw, dealing Physical DMG.Repeatedly press or hold the button to extend the chainsaw slash attack.",
+            "energy": 0,
+            "damage": 643,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Quick Assist: Emergency Measures",
+            "description": "When the on-field character is launched, press Assist to activate:\nSlashes enemies in front before detonating her chainsaw, dealing Physical DMG.\nRepeatedly press or hold the button to extend the chainsaw slash attack.",
+            "energy": 0,
+            "damage": 509
+          },
+          {
+            "name": "Defensive Assist: P—Please Allow Me!",
+            "description": "When the character on-field is about to be attacked, press Assist to activate:\nParries the enemy's attack, dealing massive Daze. This skill excels at parrying enemy attacks and reduces the consumption of Assist Points when the character is under intense attacks.",
+            "energy": 0,
+            "damage": 524,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Assist Follow-Up: Quick Sweep",
+            "description": "Press Basic Attack after a Defensive Assist to activate:\nUnleash a series of slashes against enemies in front followed by an explosive chainsaw, dealing Physical DMG. Repeatedly press or hold to extend the chainsaw slash attack.",
+            "energy": 0,
+            "damage": 1294,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Special Attack: Clean Sweep",
+            "description": "Press Special Attack to activate:\nUnleashes a series of slashes upon enemies in front, before detonating the chainsaw, dealing Physical DMG. Repeatedly press or hold the button to extend the chainsaw slash attack.",
+            "energy": 0,
+            "damage": 158,
+            "effect": "Anti-Interrupt level is increased while using this skill, and DMG taken is reduced by 40%."
+          },
+          {
+            "name": "EX Special Attack: Skirt Alert",
+            "description": "With enough Energy, press EX Special Attack to activate:\nUnleashes a series of slashes upon enemies in front, before detonating the chainsaw, dealing massive Physical DMG. Repeatedly press or hold the button to extend the chainsaw slash attack at the cost of Energy if the attack connects.",
+            "energy": 0,
+            "damage": 2259,
+            "effect": "Character is invulnerable during the spinning slash.\nAnti-Interrupt level is increased during the extended slash, and DMG taken is reduced by 40%."
+          },
+          {
+            "name": "Chain Attack: Sorry...",
+            "description": "When a Chain Attack is triggered, select the character to activate:\nUnleashes a powerful slash at enemies in a small area, dealing massive Physical DMG.Repeatedly press or hold the button to extend the chainsaw slash attack.",
+            "energy": 0,  
+            "damage": 1624,          
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Ultimate: Very, Very Sorry!",
+            "description": "When Decibel Rating is at Maximum, press Ultimate Colored to activate:\nUnleashes a powerful slash at enemies in a small area, dealing massive Physical DMG. Repeatedly press or hold the button to extend the chainsaw slash attack.",
+            "energy": 0,
+            "damage": 4796,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Core Passive: Hyperfocus",
+            "description": "After holding or tapping repeatedly, when Corin unleashes a continuous extended slash with her Chainsaw, the skill's DMG increases by X%.",
+            "energy": 0,
+            "effect": "Skill DMG(%): 18.7,21.8,25,28.1,31.2,34.3,37.5"
+          },
+          {
+            "name": "Additional Ability: Cleanup Assistance",
+            "description": "When another character in your squad shares the same Attribute or Faction:\nCorin deals 35% more DMG to Stunned enemies.",
+            "energy": 0
+          }      
+          
+      ],
+       "stats": {
+          "hp": 1150,
+          "attack": 75,
+          "defense": 50,
+          "speed": 90,
+          "critRate": 10,
+          "critDamage": 150
+        },
+         "backstory": "Corin Wickes is a young maid working for Victoria Housekeeping Co. who has notable self esteem and confidence issues. Once a sickly girl who required major surgery, Corin is now an exceptional combatant who takes an intimating and devastating 'chainsaw' with her wherever she goes, be it for in-Hollow commissions, for maid-related tasks, and for everyday life. Though timid, lacking self-esteem and constantly apologizing for anything and everything, Corin is one of Victoria Housekeeping's most reliable members, sporting a flawless performance and never failing to fulfill her tasks. On rare occasions, Corin shows notable initiative and confidence; at times like this, she rarely stutters or apologizes."
     }
+    },
+    {
+      "id": "7",
+      "name": "Anby Demara",
+      "image": "assets/icons/anby_icon.png",
+      "fullImage": "assets/images/anby_full.png",
+      "rarity": "A",
+      "attribute": "Electric",
+      "specialty": "Stun",
+      "details": {
+        "description": "A mysterious young girl who never talks about her past, almost as if she didn't have one.She is calm and collected, and unusually competent and efficient in combat, almost as if she'd had years of training. In an unexpected incident, Nicole brought her back to the Cunning Hares, and she's has an emotional independence on her ever since. She loves watching movies, but due to certain lack of common sense she seems to almost think them real-life stories. ",
+        "abilities": [
+        {
+            "name": "Basic Attack: Turbo Volt",
+            "description": "Press Basic Attack to launch this attack.\nUnleashes up to 4 slashes. The first 3 hits deal Physical DMG, the 4th hit deals Electric DMG.",
+            "energy": 0,
+            "damage": 566
+          },
+          {
+            "name": "Basic Attack: Thunderbolt",
+            "description": "After unleashing the 3rd hit of the Basic Attack, hold down or pause for a short while, and then press Basic Attack to activate:\nUnleashes a downward strike that deals Electric DMG.",
+            "energy": 0,
+            "damage": 1117,
+            "effect": "Anti-Interrupt level is increased while using this skill.."
+          },
+          {
+            "name": "Dodge: Slide",
+            "description": "Press Dodge to activate:\nA rapid dodge.",
+            "energy": 0,
+            "damage": 228,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Dash Attack: Taser Blast",
+            "description": "Press Basic Attack during a dodge to activate:\nSlashes all nearby enemies, dealing Physical DMG.",
+            "energy": 0,
+            "damage": 134
+          },
+          {
+            "name": "Dodge Counter: Thunderclap",
+            "description": "Press Basic Attack during a perfect dodge to activate:\nSlashes all nearby enemies, dealing Electric DMG.",
+            "energy": 0,
+            "damage": 426,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Quick Assist: Thunderfall",
+            "description": "When the on-field character is launched, press Assist Attack to activate:\nSlashes all nearby enemies, dealing Electric DMG.",
+            "energy": 0,
+            "damage": 147,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Defensive Assist: Flash",
+            "description": "When the character on field is about to be attacked, press Assist Attack to activate:\nParries the enemy's attack, dealing massive Daze.",
+            "energy": 0,
+            "damage": 524,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Assist Follow-Up: Lightning Whirl",
+            "description": "Press Basic Attack after a Defensive Assist to activate:\nPerform a spinning slash against enemies in front, dealing Electric DMG",
+            "energy": 0,
+            "damage": 729,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Special Attack: Fork Lightning",
+            "description": "With enough Energy, press EX Special Attack to activate:\nUnleashes a powerful upward slash that deals Electric DMG.\nThis attack launches faster when used after the 3rd-hit of her Basic Attack or Basic Attack: Thunderbolt.",
+            "energy": 0,
+            "damage": 1413,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Chain Attack: Electro Engine",
+            "description": "When a Chain Attack is triggered, select the character to activate:\nUnleashes a powerful upward slash at enemies in a small area, dealing massive Electric DMG.",
+            "energy": 0,  
+            "damage": 1283,          
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Ultimate: Overdrive Engine",
+            "description": "When Decibel Rating is at Maximum, press Ultimate Colored to activate:\nUnleashes a powerful upward slash at enemies in a small area followed by several falling attacks, dealing massive Electric DMG.",
+            "energy": 0,
+            "damage": 3561,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Core Passive: Fluctuating Voltage",
+            "description": "Launch a Basic Attack: Thunderbolt, Special Attack, or EX Special Attack after the 3rd-hit of Anby's Basic Attack for an extra X% Daze.",
+            "energy": 0,
+            "effect": "Daze(%): 32,37,3.42,6,48,53.3,58.6,64"
+          },
+          {
+            "name": "Additional Ability: Parallel Connection",
+            "description": "When another character in your squad shares the same Attribute or Faction:\nWhen Anby's Dodge Counter hits an enemy, she gains an extra 7.2 Energy. This effect can trigger once every 5s.",
+            "energy": 0
+          }      
+          
+      ],
+       "stats": {
+          "hp": 1150,
+          "attack": 75,
+          "defense": 50,
+          "speed": 90,
+          "critRate": 10,
+          "critDamage": 150
+        },
+         "backstory": "Before the Fall of the Old Capital, Anby used to be known as Soldier 0, the captain of the Silver Squad, a group within the New Eridu Defense Force Obsidian Division. Unlike other squads, Silver Squad's infantry consisted of replicas, artificial humans made via genetic cloning. This made them incredibly loyal and powerful (albeit high-maintenance) soldiers that could be easily replaced if they died in battle. She was considered the best of all the replicas, obedient to the point she would kill herself if ordered.\n\nAll replicas considered themselves to be sisters and cared for each other as family. Therefore, when the Defense Force tried to select only one replica to keep to get rid of the others and cut the maintenance costs, Anby failed her tests on purpose to convince the Obsidian Division the entire Silver Squad was needed and not get rid of her sisters. However, it could not go on forever: one day, their superiors decided to devise a suicide mission to kill off all members of the Silver Squad and keep Anby as the sole replica. However, the night before the operation, Harin, also known as Soldier 11, got injured during training, so Anby took her place for deployment.\n\nDespite the mission being created ad hoc to leave no soldier alive, Anby managed to survive and return to the base after witnessing the death of her sisters. Upon her return, her disgruntled superiors, who wanted to keep only one replica alive, gave Anby the order to kill Soldier 11. In an act of disobedience towards her superiors and of love towards her sister, Anby slit her own throat instead, so that the Obsidian Division would be forced to keep Soldier 11 as the sole replica. Her superiors hence kept Soldier 11 and disposed of Anby's body by leaving it by the ruins of the Old Capital, where she was found by Nicole Demara, who took her in as the first member of Gentle House and gave her her own surname.\n\nWhen a replica sustains a heavy injury, their memory gets damaged, leading to temporary retrograde amnesia. Therefore, it took a while before Anby remembered her past as Soldier 0. When the memories of her time in the Silver Squad came back, she asked Nicole to gather information regarding Soldier 11; as she learnt that her sister had joined Obol Squad and became an exemplary soldier, Anby decided it was best to leave her be, feeling that their shared past would only weigh greatly on her."
+    }
+    },
+    {
+      "id": "8",
+      "name": "Alexandrina Sebastiane",
+      "image": "assets/icons/rina_icon.png",
+      "fullImage": "assets/images/rina_full.png",
+      "rarity": "S",
+      "attribute": "Electric",
+      "specialty": "Support",
+      "details": {
+        "description": "Alexandrina Sebastiane, commonly referred to as Rina,She is the Head Maid and most senior member of Victoria Housekeeping Co.",
+        "abilities": [
+        {
+            "name": "Basic Attack: Whack the Dimwit",
+            "description": "Press Basic Attack to activate:\nOrder Drusilla and Anastella to attack up to 4 times, dealing Physical DMG and Electric DMG.\nPerforming other actions with Rina during Drusilla and Anastella's attacks will not interrupt Rina's Basic Attack combo count.",
+            "energy": 0,
+            "damage": 435
+          },
+          {
+            "name": "Basic Attack: Shoo the Foolt",
+            "description": "Hold Basic Attack or Special Attack to activate:\nCalls back Drusilla and Anastella to swing them around for a ranged attack, dealing Electric DMG.",
+            "energy": 0,
+            "damage": 745.6,
+            "effect": "Anti-Interrupt level is increased while using this skill.."
+          },
+          {
+            "name": "Dodge: Dress Adjustment",
+            "description": "Press Dodge to activate:\nA rapid dodge.",
+            "energy": 0,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Dash Attack: Sudden Surprise",
+            "description": "Press Basic Attack during a dodge to activate:\nOrder Drusilla and Anastella to execute a piercing attack, dealing Physical DMG.",
+            "energy": 0,
+            "damage": 294
+          },
+          {
+            "name": "Dodge Counter: Bangboo Callback",
+            "description": "Press Basic Attack during a Perfect Dodge to activate:\nOrder Drusilla and Anastella to spin forward and trigger an explosion, dealing Electric DMG.",
+            "energy": 0,
+            "damage": 538,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Quick Assist: Duple Meter Allemande",
+            "description": "When the on-field character is launched, press Assist to activate:\nOrder Drusilla and Anastella to spin forward and trigger an explosion, dealing Electric DMG.",
+            "energy": 0,
+            "damage": 290.6,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Evasive Assist: Triple Meter Courante",
+            "description": "When the character on-field is about to be attacked, press Assist to activate:\nDodges the enemy's attack and activates Vital View.",
+            "energy": 0,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Assist Follow-Up: Quadruple Meter Gavotte",
+            "description": "Press Basic Attack after an Evasive Assist to activate:\nOrder Drusilla and Anastella to push forward and generate an electrical vortex, dealing Electric DMG.",
+            "energy": 0,
+            "damage": 826,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Special Attack: Beat the Blockhead",
+            "description": "Press Special Attack to activate:\nOrder Anastella to execute a downward smash, dealing Electric DMG.",
+            "energy": 0,
+            "damage": 143,
+            "effect": "Anti-Interrupt level is increased while using this skill."
+          },
+          {
+            "name": "EX Special Attack: Dimwit Disappearing Trick",
+            "description": "With enough Energy, press EX Special Attack to activate:\nOrder Drusilla and Anastella to execute multiple downward smashes, dealing massive Electric DMG.",
+            "energy": 0,  
+            "damage": 1241,          
+            "effect": "Character is invulnerable while using this skill.\nA Quick Assist is triggered when this skill hits an enemy."
+          },
+          {
+            "name": "Chain Attack: Code of Conduct",
+            "description": "When a Chain Attack is triggered, select the character to activate:\nOrder Drusilla and Anastella to push forward and generate a ball-shaped electrical field that deals massive Electric DMG. During this skill, Drusilla and Anastella are unable to perform Basic Attacks, Dash Attacks, Special Attacks, and EX Special Attacks, but can be recalled to Rina's side through Basic Attack: Shoo the Fool.",
+            "energy": 0,
+            "damage": 2394.5,
+            "effect": "Character is invulnerable while using this skill.\nA Quick Assist is triggered when this skill hits an enemy."
+          },
+          {
+            "name": "Ultimate: The Queen's Attendants",
+            "description": "When Decibel Rating is at Maximum, press Ultimate Colored to activate:\nOrder Drusilla and Anastella to spin forward, dealing massive Electric DMG. During this skill, Drusilla and Anastella are unable to respond to Basic Attack, Dash Attack, Special Attack, or EX Special Attack commands but can be recalled to Rina's side through Basic Attack: Shoo the Fool. Upon activating this skill, the other squad members recover 10 Energy. The next character to switch in recovers an additional 20 Energy.",
+            "energy": 0,
+            "damage": 5004.2,
+            "effect": "Character is invulnerable while using this skill.\nA Quick Assist is triggered when this skill hits an enemy."
+          },
+          {
+            "name": "Core Passive: Mini Destruction Partner",
+            "description": "When ordering Drusilla or Anastella to attack, other squad members' PEN Ratio increases together with Rina's, by 25% of Rina's PEN Ratio + 7.5%–12%, up to 30%. The effect ends when both Drusilla and Anastella return to Rina.",
+            "energy": 0,
+            "effect": "PEN Ratio(%): 6, 7.5, 9, 10.2, 11.4, 12"
+          },
+          {
+            "name": "Additional Ability: Banquet of Perfection",
+            "description": "When another character in your squad shares the same Attribute or Faction:\nIncreases the duration of Shock inflicted on enemies by any character by 3s. When Shocked enemies are on the field, all squad members' Electric DMG increases by 10%.",
+            "energy": 0
+          }         
+          
+      ],
+       "stats": {
+          "hp": 1150,
+          "attack": 75,
+          "defense": 50,
+          "speed": 90,
+          "critRate": 10,
+          "critDamage": 150
+        },
+         "backstory": "Rina, the head maid of Victoria Housekeeping Co., and the most senior member of the organization.\nShe possesses beauty and grace, appearing immaculate from head to toe, with a noble demeanor and a gentle smile on her face.\nShe places considerable importance on how she is perceived by others.\n\nRina is always accompanied by two Bangboo named Anastella (brown hair) and Drusilla (blonde hair), both of whom have distinct personalities.\nDrusilla has been with Rina for a significant period of time and displays high intelligence, capable of discerning Rina's true emotions and thoughts.\nAnastella, a recent addition, usually responds rather than initiates conversation and is frequently teased by Drusilla.\n\nRina's favorite hobby is cooking, but only a few individuals are capable of enduring the dishes she prepares.\nSuggestion: You may try tasting Rina's dishes as a test to determine if you are the Chosen One."
+    }
+    },
+    {
+      "id": "9",
+      "name": "Vivian Banshee",
+      "image": "assets/icons/vivian_icon.png",
+      "fullImage": "assets/images/vivian_full.png",
+      "rarity": "S",
+      "attribute": "Ether",
+      "specialty": "Anomaly",
+      "details": {
+        "description": "Vivian is a member of Mockingbird, skilled in gathering all kinds of intel. She's also a jack of many trades — cooking, mixology, translation, art forgery, electronics repair, and more.\n\nIn the past, she apparently wandered without a home and was viewed as one who brought disaster, almost like a living omen of bad luck.\nnIt's said she can predict incoming misfortune through her tears, though there's no scientific proof of this ability.\n\nA loyal follower of Phaethon. Ever since your original account went inactive on Inter-Knot, she's been trying to track you down — digging for clues, running intense searches across the network. However, Master, she didn't find anything... all thanks to my efforts in keeping your cybersecurity airtight.",
+        "abilities": [
+        {
+            "name": "Basic Attack: Feathered Strike",
+            "description": "Press Basic Attack to activate:\nUnleashes up to four attacks in front, dealing Physical DMG and Ether DMG.\nAfter triggering the fourth attack, enter the Noblewoman state.\nWith Flight Feathers available, holding Basic Attack during the fourth attack will activate the Fluttering Frock state.",
+            "energy": 0,
+            "damage": 303
+          },
+          {
+            "name": "Basic Attack: Noblewoman - Waltz",
+            "description": "Press Basic Attack while in the Noblewoman state to activate:\nDash forward with an attack that deals Ether DMG and restores 1 Flight Feather upon hitting an enemy.\nIf a Perfect Dodge is triggered during the dash, gain 1 additional Flight Feather.\nIf Flight Feathers are available after the skill, enter the Fluttering Frock state, which can be canceled by holding Dodge when the skill is used.",
+            "energy": 0,
+            "damage": 113.8,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Basic Attack: Fluttering Frock - Suspension",
+            "description": "Press Basic Attack while in the Fluttering Frock state to activate:\nAttack an area ahead, dealing Ether DMG.\nAfter activation, this skill consumes all Flight Feathers, and each one consumed grants 1 Guard Feather.\nWhen switching characters during the Fluttering Frock state,\nVivian will automatically perform Basic Attack: Fluttering Frock - Suspension.\nWhile in the Fluttering Frock state, press Dodge to exit the state.",
+            "energy": 0,
+            "damage": 189,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Basic Attack: Featherbloom",
+            "description": "After any squad member hits a target with an EX Special Attack, Vivian will consume 1 Guard Feather to launch Basic Attack:\nFeatherbloom against the target, dealing Ether DMG, triggering at most once per use of a skill. This effect can trigger even while Vivian is off-field.\nA maximum of 5 Guard Feathers can be stored.",
+            "energy": 0,
+            "damage": 520
+          },
+          {
+            "name": "Dodge: Lightstream",
+            "description": "Press Dodge to activate:\nA quick dash dodge.",
+            "energy": 0
+            
+          },
+          {
+            "name": "Dodge: Dainty Steps",
+            "description": "When in the Noblewoman state and about to be attacked, an automatic dodge will trigger, during which the character will be Invulnerable, but a Perfect Dodge will not be triggered.\nThis can trigger once each time the Noblewoman state is entered..",
+            "energy": 0,
+            
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Dash Attack: Silver Thorned Melody",
+            "description": "Press Basic Attack during a dodge to activate: Launches a forward thrust at enemies in front, dealing Physical DMG.",
+            "energy": 0,
+            "damage": 118
+          },
+          {
+            "name": "Dodge Counter: Wingblade Reverb",
+            "description": "Press Basic Attack during a Perfect Dodge to activate: \nLaunches an attack on enemies ahead, dealing Physical DMG and Ether DMG.\nAfter activating the skill, enter the Noblewoman state. \nWhen there are Flight Feathers available, hold Basic Attack during skill activation to enter the Fluttering Frock state.",
+            "energy": 0,
+            "damage": 558,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Quick Assist: Frostwing Guard",
+            "description": "When the active character is launched, press Assist Attack to activate: \nLaunches an attack on enemies ahead, dealing Physical DMG and Ether DMG. \nAfter the skill activates, enter the Noblewoman state. \nWith Flight Feathers available, hold Basic Attack during skill activation to enter the Fluttering Frock state.",
+            "energy": 0,
+            "damage": 230,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Defensive Assist: Silver Umbrella Formation",
+            "description": "When the on-field character is about to be attacked, press Assist Attack to activate: \nParries the enemy's attack, dealing massive Daze.",
+            "energy": 0,
+            "damage": 576,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Assist Follow-Up: Featherblade Execution",
+            "description": "Press Basic Attack after a Defensive Assist to activate: \nLaunch an attack at enemies ahead, dealing Ether DMG and gaining 2 Flight Feathers. \nAfter the skill activates enter the Fluttering Frock state, which can be canceled by holding Dodge during the skill.",
+            "energy": 0,
+            "damage": 883,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Special Attack: Song of Silver Wings",
+            "description": "Press Special Attack to activate:\nQuickly attack forward, dealing Physical DMG and Ether DMG.",
+            "energy": 0,  
+            "damage": 134,          
+            "effect": "Anti-Interrupt level is increased while using this skill."
+          },
+          {
+            "name": "EX Special Attack: Violet Requiem",
+            "description": "With enough Energy, press EX Special Attack to activate: \nUnleash a powerful forward attack that deals massive Ether DMG and grants 3 Flight Feathers. \nEnter the Fluttering Frock state after using the skill. Hold Dodge during the skill to enter the Noblewoman state.",
+            "energy": 0,
+            "damage": 1401,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Chain Attack: Chorus of Celestial Wings",
+            "description": "When a Chain Attack is triggered, select the character to activate:\nLaunch a powerful attack on a large area of enemies ahead, dealing massive Ether DMG and gaining 2 Flight Feathers. \nAfter the skill activates, enter the Fluttering Frock state, which can be canceled by holding Dodge during the skill.",
+            "energy": 0,
+            "damage": 1557,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Ultimate: Soaring Bird's Song",
+            "description": "When Decibel Rating is at Maximum, press Ultimate Colored to activate:\nLaunch a powerful attack on a large area of enemies ahead, dealing massive Ether DMG and gaining 5 Flight Feathers.\nAfter the skill is activated, enter the Fluttering Frock state, which can be canceled by holding Dodge during the skill.",
+            "energy": 0,
+            "damage": 3987,
+            "effect": "Character is invulnerable while using this skill."
+          },      
+          {
+            "name": "Core Passive: Dirge of Destiny",
+            "description": "When Basic Attack: Featherbloom hits a target that is suffering from an Ether, Electric, Fire, Physical, or Ice Anomaly, it will trigger Abloom, dealing additional \nAttribute Anomaly DMG. The additional DMG is A%/B%/C%/D%/E% per 10 points of Anomaly Proficiency of the original Anomaly DMG.\nWhen Basic Attack: Fluttering Frock - Suspension or Basic Attack: Featherbloom hits a target suffering any Attribute Anomaly, it will inflict Vivian's Prophecy, causing the target to take Ether DMG equal to 55% of Vivian's ATK every 0.55s. \nThis DMG can trigger additional DMG from Attribute Anomalies. Vivian's Prophecy ends when the target is no longer suffering an Attribute Anomaly.\nWhen entering the battlefield, Vivian gains 2 Flight Feathers.",
+            "energy": 0,
+            "damage": 6.15
+          }, 
+          {
+            "name": "Additional Ability: Prophetic Tears",
+            "description": "When another character in your squad is an Anomaly character or shares the same attribute:\nWhenever another squad member applies an Attribute Anomaly to an enemy, Vivian will consume 1 Guard Feather to launch Basic Attack: Featherbloom on the target. This can trigger once every 0.5s.\nCorruption DMG dealt by all squad members and the Corruption status' Disorder DMG increases by 12%.",
+            "energy": 0   
+          } 
+      ],
+       "stats": {
+          "hp": 1140,
+          "attack": 70,
+          "defense": 45,
+          "speed": 90,
+          "critRate": 10,
+          "critDamage": 150 
+        },
+         "backstory": "Flight of Ceremony is a custom-made retro parasol for Vivian, featuring a base of interwoven dark purple silk and black leather, with silver bows adorning the edges. When opened, the parasol displays a ring of embroidered birds in flight, creating an illusion of birds performing a cerimonial flight aound the parasol as it spins.\n\nUsually, it's merely Vivian's elegant accessory. But when enemies appear, the mithril spike at the tip can instantly pierce through foes, while the propulsion system around the umbrella's rim helps Vivian lift off the ground to dodge attacks. The parasol not only helps Vivian hide her blush but has also witnessed her courage along the way.\nThe illusion of motion of the embroidered birds given by the parasol spinning is an example of zoopraxiscope."
+    }
+    },
+{
+    "id": 10,
+      "name": "Von Lycaon",
+      "image": "assets/icons/von_icon.png",
+      "fullImage": "assets/images/von_full.png",
+      "rarity": "S",
+      "attribute": "Ice",  
+      "specialty": "Stun",
+      "details": {
+        "description": "Can resolve any matter. The most trusted of attendants, and solid support for any team.\nRational and wise, a true gentleman who can't tolerate a single stain.\nOffers absolute loyalty to the one he decides to follow.\nThough outwardly sophisticated and rational, his innate feral character will reveal itself when faced with certain dangers.",
+        "abilities": [
+        {
+            "name": "Basic Attack: Moon Hunter",
+            "description": "Press Basic Attack to activate:\nUnleashes up to 5 strikes in front, dealing Physical damage.\nHold down Basic Attack to charge up, increasing the power of the attack and dealing Ice DMG.",
+            "energy": 0,
+            "damage": 841
+          },
+          {
+            "name": "Dodge: Suitable Positioning",
+            "description": "Press Dodge to dodge:\nA rapid dodge.",
+            "energy": 0,
+            "damage": 0,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Dash Attack: Keep it Clean",
+            "description": "Press Basic Attack during a dodge to activate:\nSlides forward, launching a series of strikes in front, dealing Physical DMG.",
+            "energy": 0,
+            "damage": 111
+          },
+          {
+            "name": "Dodge Counter: Etiquette Manual",
+            "description": "After any squad member hits a target with an EX Special Attack, Vivian will consume 1 Guard Feather to launch Basic Attack: Featherbloom against the target, dealing Ether DMG, triggering at most once per use of a skill. This effect can trigger even while Vivian is off-field. A maximum of 5 Guard Feathers can be stored.",
+            "energy": 0,
+            "damage": 442,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Quick Assist: Wolf Pack",
+            "description": "When the on-field character is launched, press Assist to activate:\nStrikes enemies in front, dealing Ice DMG.",
+            "energy": 0,
+            "damage": 150.1,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Defensive Assist: Disrupted Hunt",
+            "description": "When the character on-field is about to be attacked, press Assist to activate:\nParries the enemy's attack, dealing massive Daze.",
+            "energy": 0,
+            "damage": 550.8,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Assist Follow-Up: Vengeful Counterattack",
+            "description": "Press Basic Attack after a Defensive Assist to activate:\nCreates an icicle in front, which strikes all enemies within range, dealing Ice DMG.",
+            "energy": 0,
+            "damage": 682.8,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Special Attack: Time to Hunt",
+            "description": "Press Special Attack to activate:\nUnleashes a series of strikes in front, dealing Ice DMG.\nHold down Special Attack to charge up, increasing its power.",
+            "energy": 0,
+            "damage": 226.1,
+            "effect": "Anti-Interrupt level is increased while using this skill."
+          },
+          {
+            "name": "EX Special Attack: Thrill of the Hunt",
+            "description": "With enough Energy, press EX Special Attack to activate:\nUnleashes a series of powerful strikes in front, dealing massive Ice DMG.\nHold down EX Special Attack to charge up, consuming Energy and enhancing the power of the attack.",
+            "energy": 0,
+            "damage": 1868.0,
+            "effect": "Character is invulnerable during the spinning slash."
+          },
+          {
+            "name": "Special Attack: Song of Silver Wings",
+            "description": "Press Special Attack to activate:\nQuickly attack forward, dealing Physical DMG and Ether DMG.",
+            "energy": 0,  
+            "damage": 134.9,          
+            "effect": "Anti-Interrupt level is increased while using this skill."
+          },
+          {
+            "name": "EX Special Attack: Violet Requiem",
+            "description": "With enough Energy, press EX Special Attack to activate: Unleash a powerful forward attack that deals massive Ether DMG and grants 3 Flight Feathers. Enter the Fluttering Frock state after using the skill. Hold Dodge during the skill to enter the Noblewoman state.",
+            "energy": 0,
+            "damage": 1401.1,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Chain Attack: As You Wish",
+            "description": "When a Chain Attack is triggered, select the character to activate:\nUnleashes a series of powerful strikes at enemies in a small area in front of him, dealing massive Ice DMG.",
+            "energy": 0,
+            "damage": 1507.8,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Ultimate: Mission Complete",
+            "description": "When Decibel Rating is at Maximum, press Ultimate Colored to activate:\n\nUnleashes multiple powerful strikes at enemies in a large area, dealing massive Ice DMG.",
+            "energy": 0,
+            "damage": 4005.6,
+            "effect": "Character is invulnerable while using this skill."
+          },      
+          {
+            "name": "Core Passive: Metallic Paws",
+            "description": "When Lycaon charges his Basic Attack to completion, the attack deals X% increased Daze.\n\nWhen EX Special Attack or Assist Follow-Up hits an enemy, the target's Ice DMG RES decreases by 25% for 30s.",
+            "energy": 0,
+            "damage": 80,
+            "effect": "Character is invulnerable while using this skill."
+          }, 
+          {
+            "name": "Additional Ability: Elegant Predator",
+            "description": "When another character in your squad shares the same Attribute or Faction:\n\nWhen Lycaon hits a Stunned enemy, the target's Stun DMG Multiplier increases by 35%.",
+            "energy": 0 
+          } 
+      ],
+       "stats": {
+          "hp": 1150,
+          "attack": 75,
+          "defense": 50,
+          "speed": 90,
+          "critRate": 10,
+          "critDamage": 150 
+        },
+         "backstory": "Lycaon, the substantive leader and representative of Victoria Housekeeping Co., is responsible for managing all members of the company.\n\nRational and reliable, Lycaon is an elegant gentleman and a versatile attendant who can solve any problem. He is the cornerstone of his team and a reassuring presence.\n\nHe has a slight obsession with cleanliness, always tidying up his surroundings and unable to tolerate dirty environments.\n\nAlthough Lycaon maintains his elegance and composure, his canine instincts occasionally shine through. When he is particularly happy, his tail and ears unconsciously wag. He seems to be aware of this habit and somewhat bothered by it.\n\nAdditionally, like most furry Thiren, Lycaon takes great care of his fur."
+    }
+    },
+{
+      "id": "11",
+      "name": "Tsukishiro Yanagi",
+      "image": "assets/icons/tukishiro_icon.png",
+      "fullImage": "assets/images/tukishiro_full.png",
+      "rarity": "S",
+      "attribute": "Electric",
+      "specialty": "Anomaly",
+      "details": {
+        "description": "The Deputy Chief of Hollow Special Operations Section 6, Tsukishiro Yanagi is an ex-soldier from the New Eridu Defense Force who has been infused with Oni blood.\n\nHer main jobs include general management, on-site support and being the guardian of her fellow member Soukaku; alongside all these duties, she usually finds herself having to complete the rest of the team's tasks as well. \n\nDue to the unique personalities of the other Section 6 members, Yanagi's seriousness and diligence classify her as the only normal member of the team. \n\nIt is with her guidance, experience, and leadership that the primary on-field group's powers combine into true combat power.",
+        "abilities": [
+        {
+            "name": "Basic Attack: Tsukuyomi Kagura",
+            "description": "Yanagi has two stances: Jougen and Kagen.\nPress Basic Attack to activate:\nExecute up to five forward slashes based on the current stance, causing Physical DMG and Electric DMG.\nDuring combat, Yanagi gains the corresponding stance buff based on her current stance:\nJougen stance buff: Electric DMG increases by 10%. Anti-Interrupt Level increases during Basic Attacks.\nKagen stance buff: PEN Ratio increases by 10%. Interrupt Level increases for Basic Attacks.\nFor 8s after switching stances, Yanagi retains the bonus from the previous stance.",
+            "energy": 0,
+            "damage": 643.8
+          },
+          {
+            "name": "Dodge: Wandering Breeze",
+            "description": "Press Dodge to activate:\nA quick dash dodge.",
+            "energy": 0,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Dash Attack: Fleeting Flight",
+            "description": "Press Basic Attack during a dodge to activate:\nSlashes enemies in front, dealing Physical DMG.",
+            "energy": 0,
+            "damage": 119.4
+          },
+          {
+            "name": "Dodge Counter: Rapid Retaliation",
+            "description": "Press Basic Attack during a Perfect Dodge to activate:\nSlashes enemies in front, dealing Electric DMG.\nAfter using this skill, you can immediately follow up with the 3rd hit of the current stance's Basic Attack.",
+            "energy": 0,
+            "damage": 548.1
+          },
+          {
+            "name": "Quick Assist: Blade of Elegance",
+            "description": "When the on-field character is launched, press Assist Attack to activate:\nSlashes enemies in front, dealing Electric DMG.\nAfter using this skill, you can immediately follow up with the 3rd hit of the current stance's Basic Attack.",
+            "energy": 0,
+            "damage": 222.6,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Defensive Assist: Radiant Reversal",
+            "description": "When the on-field character is about to be attacked, press Assist Attack to activate:\nParries the enemy's attack, dealing massive Daze.",
+            "energy": 0,
+            "damage": 520.1,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Assist Follow-Up: Weeping Willow Stab",
+            "description": "Press Basic Attack after a Defensive Assist to activate:\nSwitch stances, and quickly deliver multiple slashes to enemies in front, dealing Electric DMG.\nAfter using this skill, you can immediately follow up with the 3rd hit of the current stance's Basic Attack.",
+            "energy": 0,
+            "damage": 963.6,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Special Attack: Ruten",
+            "description": "Press Special Attack to activate:\nPerform a forward slash, dealing Electric DMG, and switch the current stance.\nIf activated after the 3rd, 4th, or 5th hit of a Basic Attack, it activates Swift Ruten, speeding up the slashes while switching her current stance.\nBlock enemy attacks while Swift Ruten is active.\nUpon activating Swift Ruten, Yanagi can immediately follow up with the 3rd hit of the current stance's Basic Attack.",
+            "energy": 0,
+            "damage": 277.9,
+            "effect": "Anti-Interrupt level is increased while using this skill."
+          },
+          {
+            "name": "EX Special Attack: Gekka Ruten",
+            "description": "With enough Energy, hold EX Special Attack to activate:\nCharge up power for a quick forward thrust, followed by a downward attack, dealing massive Electric DMG.\n\nUpon executing the thrust, Yanagi switches stances and enters the Shinrabanshou state, lasting 15s. For the duration of this state, when following up with a subsequent Basic Attack from the 5th hit of a Basic Attack or other skills, the combo will begin directly from the 3rd hit of the Basic Attack.\n\nIf the downward attack hits an enemy suffering an Anomaly, it triggers a special Disorder effect, Polarity Disorder, dealing 15% of the original Disorder effect's DMG to the target, plus an additional X% of Yanagi's Anomaly Proficiency. Polarity Disorder will not remove the target's Anomaly.",
+            "energy": 0,
+            "damage": 893.8,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Chain Attack: Celestial Harmony",
+            "description": "When a Chain Attack is triggered, select the character to activate:\nSwitch stances and unleash a powerful slash on enemies in front, dealing massive Electric DMG.\nAfter using this skill, you can immediately follow up with the 3rd hit of the current stance's Basic Attack.",
+            "energy": 0,  
+            "damage": 1403.1,          
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Ultimate: Raiei Tenge",
+            "description": "When Decibel Rating is at Maximum, press Ultimate Colored to activate:\n\nYanagi unleashes her potential and delivers a powerful slash to a large area of enemies in front in a very short time, followed by an additional lightning strike, dealing massive Electric DMG.\n\nWhen the lightning strike hits an enemy affected by an Attribute Anomaly, it triggers a special Disorder effect called Polarity Disorder. This deals DMG equal to 15% of the original Disorder effect plus an additional X% of Yanagi's Anomaly Proficiency.\n\nPolarity Disorder will not remove the target's Anomaly.\nAfter using this skill, Yanagi can immediately follow up with the 3rd hit of the current stance's Basic Attack.",
+            "energy": 0,
+            "damage": 3574.3,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Core Passive: Lunar Eclipse",
+            "description": "After Yanagi activates her EX Special Attack, the DMG multiplier of Disorder is increased by X% when any squad member applies the Disorder effect to an enemy, lasting 15s.\nWhen her EX Special Attack hits an enemy, Yanagi's Electric DMG against the target is increased by Y% for 15s.",
+            "energy": 0,
+            "damage": 250
+          },
+          {
+            "name": "Additional Ability: Gessou",
+            "description": "When another character in your squad is an Anomaly character or shares the same attribute:\nAfter switching stances, when Yanagi hits an enemy with Basic Attack: Tsukuyomi Kagura, Electric Anomaly Buildup increases by 45% for 8s.",
+            "energy": 0
+          }      
+          
+      ],
+       "stats": {
+          "hp": 1150,
+          "attack": 75,
+          "defense": 50,
+          "speed": 90,
+          "critRate": 10,
+          "critDamage": 150
+        },
+         "backstory": "Tsukishiro Yanagi was a member of the New Eridu Defense Force Obsidian Division who served during the Oni rebellion. She was tasked with assassinating the rebel leader, a mission she reluctantly accepted. Whilst making her way to the leader's hideout, she met a young Soukaku and soon saved her from an oncoming missile strike, being captured by Oni rebels in the process. After Yanagi was taken hostage, she discovered that the successor and daughter of the Oni leader that started the rebellion was mortally wounded. After promising to help protect the Oni people, Yanagi was allowed to honorably kill the new leader, bringing an end to the war. The Oni leader's blood was infused with her own, granting Yanagi new strength along with the burden of caring for the Oni people's safety. Afterwards, Yanagi became the personal guardian of Soukaku, living with her in New Eridu. As a member of the Defense Force. she collaborated with H.A.N.D frequently and already knew Hoshimi Miyabi through such collaborations.\n\nYanagi was present during the Argos Hollow incident, where she calculated the amount of casualties if the Shiyu Pillar was detonated and stated she would perform the task if Miyabi failed to defeat Lerna in three minutes. After Miyabi's victory, she, alongside H.A.N.D executive officer Asaba Harumasa, were transferred to the newly formed Hollow Special Operations Section 6 by the newly titled Void Hunter in order to expose the roots of corruption within New Eridu Yanagi later ascended to Deputy Chief, taking responsibility for both her ward and her fellow members. \n\nDuring an invitation by the Hollow Investigative Association to test out their VR system, Yanagi became crucial in saving her teammates' lives when the systems were hacked by the Proxy group Null_Face, trapping them within the virtual environment. Her perseverance and combat skill allowed her to escape the system along with her teammates."
+    }
+},
+{
+      "id": "12",
+      "name": "Zhu Yuan",
+      "image": "assets/icons/zhu_icon.png",
+      "fullImage": "assets/images/zhu_full.png",
+      "rarity": "S",
+      "attribute": "Ether",
+      "specialty": "Attack",
+      "details": {
+        "description": "Zhu Yuan, is an exceptional PubSec officer and current captain of the Criminal Investigation Special Response Team. A skilled martial artist and sharpshooter, Zhu Yuan uses the custom-made and versatile Suppressor K22 firearm in conjunction with swift punches and kicks to take down criminals. As a reputable officer, Zhu Yuan has a strict moral compass, looking down on criminals, but is shown to be okay with taking the assistance of Proxies if the situation calls for it.\n\nZhu Yuan is a notable perfectionist, having set herself high standards to the point she has a complex, though such perfectionism has granted her exceptional experience and a record of no unresolved cases. She also exhibits an obsession with neatness, namely when it comes to her uniform. She's shown to be cautious around cats and other small furry animals due to the fur they shed.\n\nZhu Yuan is shown to have a good relationship with her parents. Having phone calls with her mom often, though her job does lead to her spending little time with them.",
+        "abilities": [
+        {
+            "name": "Basic Attack: Don't Move!",
+            "description": "Press Basic Attack to activate:\n\nUnleashes a flurry of martial arts, bullets, and Ether Buckshots in a series of up to 5 attacks, dealing Physical DMG and Ether DMG. When the 4th or 5th hits strike an enemy, obtain 1 Enhanced Shotshell. A max of 1 can be obtained per activation of this Basic Attack.\n\nWhile using this skill, drag the joystick and press Basic Attack to activate Dash Attack: Firepower Offensive and readjust to face the selected direction.\n\nWhile under Assault Mode, hold Basic Attack to switch to Suppressive Mode.",
+            "energy": 0,
+            "damage": 384.2
+          },
+          {
+            "name": "Basic Attack: Please Do Not Resist",
+            "description": "Hold Basic Attack to activate:\n\nUnleash up to 3 Shotshell piercing attacks, dealing Physical DMG. If Zhu Yuan has Enhanced Shotshells upon firing, 1 Enhanced Shotshell will be consumed, dealing massive Ether DMG.\n\nWhile using this skill, drag the joystick to activate her Dash Attack: Overwhelming Firepower and readjust to face the selected direction.\n\nWhile in Suppressive Mode, release Basic Attack to return to Assault Mode.",
+            "energy": 0,
+            "damage": 964.2
+          },
+          {
+            "name": "Dodge: Tactical Detour",
+            "description": "Press Dodge to dodge:\nA rapid dodge.",
+            "energy": 0,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Dash Attack: Firepower Offensive",
+            "description": "Press Basic Attack during a dodge to activate:\nUses handgun to attack, dealing Physical DMG.",
+            "energy": 0,
+            "damage": 131.6
+          },
+          {
+            "name": "Dash Attack: Overwhelming Firepower",
+            "description": "Drag the joystick during Basic Attack: Please Do Not Resist to activate:\nUnleashes a Shotshell piercing attack, dealign Physical DMG. \nIf Zhu Yuan has Enhanced Shotshells when firing, 1 Enhanced Shotshell will be consumed, dealing massive Ether DMG.",
+            "energy": 0,
+            "damage": 321.9
+          },
+          {
+            "name": "Dodge Counter: Fire Blast",
+            "description": "Press Basic Attack during a Perfect Dodge to activate:\nShoots enemies in front with an Ether Buckshot, dealing Ether DMG.",
+            "energy": 0,
+            "damage": 418.3,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Quick Assist: Covering Shot",
+            "description": "When the on-field character is launched in the air, press Assist Attack to activate:\nShoots enemies in front with an Ether Buckshot, dealing Ether DMG.",
+            "energy": 0,
+            "damage": 121.9,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Evasive Assist: Guarded Backup",
+            "description": "When the character on field is about to be attacked, press Assist to activate:\n\nDodges the enemy's attack and activates Vital View.",
+            "energy": 0,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Assist Follow-Up: Defensive Counter",
+            "description": "Press Basic Attack after an Evasive Assist to activate:\nAttack with a combination of martial arts and shotshells, dealing Physical DMG and Ether DMG.",
+            "energy": 0,
+            "damage": 841.8,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Special Attack: Buckshot Blast",
+            "description": "Press Special Attack to activate:\nShoots Ether Buckshots that deal Ether DMG. This can be repeated 3 times by repeatedly pressing Special Attack.",
+            "energy": 0,  
+            "damage": 43.9,          
+            "effect": "Anti-Interrupt level is increased while using this skill."
+          },
+          {
+            "name": "EX Special Attack: Full Barrage",
+            "description": "With enough Energy, press EX Special Attack to activate:\nShoots a series of Ether Buckshots, that explode and deal massive Ether DMG.\nUpon activation, gain 3 Enhanced Shotshells.",
+            "energy": 0,
+            "damage": 1388.4,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Chain Attack: Eradication Mode",
+            "description": "When a Chain Attack is triggered, select the character to activate:\nUses Modified Master Firearm to execute a saturated attack, firing lasers and seeking missiles to deal massive Ether DMG.\nUpon activation, gain 3 Enhanced Shotshells.",
+            "energy": 0,
+            "damage": 1390.0,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Ultimate: Max Eradication Mode",
+            "description": "When Decibel Rating is at Maximum, press Ultimate Colored to activate:\nUses Modified Master Firearm to execute a saturated attack, firing lasers and seeking missiles to deal massive Ether DMG.\nUpon activation, gain 3 Enhanced Shotshells.",
+            "energy": 0,
+            "damage": 4674.6,
+            "effect": "Character is invulnerable while using this skill."
+          },
+          {
+            "name": "Core Passive: Special Ops Ammunition",
+            "description": "When Zhu Yuan is under Suppressive Mode, using Enhanced Shotshells increases her DMG by X%.\nWhen attacking Stunned enemies, this DMG buff is increased by an additional X%.\nWhen Zhu Yuan enters the battlefield, she immediately gains 6 Enhanced Shotshells.",
+            "energy": 0,
+            "damage": 40
+          }, 
+          {
+            "name": "Additional Ability: Tactical Coordination",
+            "description": "When another character in your squad is a Support character or shares the same Faction:\nZhu Yuan's CRIT Rate is increased by 30% 10s after using an EX Special Attack, Chain Attack, or Ultimate.",
+            "energy": 0
+          }     
+
+          
+      ],
+       "stats": {
+          "hp": 1150,
+          "attack": 75,
+          "defense": 50,
+          "speed": 90,
+          "critRate": 10,
+          "critDamage": 150
+        },
+         "backstory": "When Zhu Yuan was just a girl, she was trapped within a Hollow along with other civilians. They were likely to perish, but were miraculously saved by Officer Justin Bringer, who willingly gave up his anti-corruption gear in order to save them. Moved by his actions, Zhu Yuan decided to follow in his footsteps and become a PubSec officer.\n\nOnce old enough, Zhu Yuan attended the Public Security Training Academy. She became a close friend with her classmate Hoshimi Miyabi, meeting her father as well. Upon graduation, Zhu Yuan's skills and success as a PubSec officer awarded her with the title Rookie of the Year and was chosen to lead the Criminal Investigation Special Response Team, headquartered in Janus Precinct. \n\nZhu Yuan was also chosen as the face for Public Security recruitment promo videos, but her poor acting skills, refusal to break protocol and harming an extra dressed as a criminal on instinct led to the director to film her responding to a hostage situation, as a way to obtain usable footage, whilst keeping on-set footage as bloopers, much to Zhu Yuan's dismay.\n\nZhu Yuan would find herself wrapped up in a conspiracy involving her hero and his link to The Exaltists, whilst working alongside her newly-made friends Belle and Wise, revealed to be New Eridu's most wanted Phaethon. With both revelations weighing heavily on her soul."
+    }
+}
   ]
 }
