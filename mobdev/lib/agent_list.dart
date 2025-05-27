@@ -225,7 +225,7 @@ class AttributeIcon extends StatelessWidget {
         attributePath = 'assets/attribute/physical.png';
         break;
       case 'electric':
-        attributePath = 'assets/electric/lightning.png';
+        attributePath = 'assets/attribute/electric.png';
         break;
       case 'ether':
         attributePath = 'assets/attribute/ether.png';
