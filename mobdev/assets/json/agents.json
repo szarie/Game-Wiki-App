@@ -967,9 +967,8 @@
           },
           {
             "name": "Dodge: Dainty Steps",
-            "description": "When in the Noblewoman state and about to be attacked, an automatic dodge will trigger, during which the character will be Invulnerable, but a Perfect Dodge will not be triggered.\nThis can trigger once each time the Noblewoman state is entered..",
+            "description": "When in the Noblewoman state and about to be attacked, an automatic dodge will trigger, during which the character will be Invulnerable, but a Perfect Dodge will not be triggered.\nThis can trigger once each time the Noblewoman state is entered.",
             "energy": 0,
-            
             "effect": "Character is invulnerable while using this skill."
           },
           {
@@ -1057,8 +1056,8 @@
          "backstory": "Flight of Ceremony is a custom-made retro parasol for Vivian, featuring a base of interwoven dark purple silk and black leather, with silver bows adorning the edges. When opened, the parasol displays a ring of embroidered birds in flight, creating an illusion of birds performing a cerimonial flight aound the parasol as it spins.\n\nUsually, it's merely Vivian's elegant accessory. But when enemies appear, the mithril spike at the tip can instantly pierce through foes, while the propulsion system around the umbrella's rim helps Vivian lift off the ground to dodge attacks. The parasol not only helps Vivian hide her blush but has also witnessed her courage along the way.\nThe illusion of motion of the embroidered birds given by the parasol spinning is an example of zoopraxiscope."
     }
     },
-{
-    "id": 10,
+    {
+    "id": "10",
       "name": "Von Lycaon",
       "image": "assets/icons/von_icon.png",
       "fullImage": "assets/images/von_full.png",
@@ -1181,11 +1180,11 @@
          "backstory": "Lycaon, the substantive leader and representative of Victoria Housekeeping Co., is responsible for managing all members of the company.\n\nRational and reliable, Lycaon is an elegant gentleman and a versatile attendant who can solve any problem. He is the cornerstone of his team and a reassuring presence.\n\nHe has a slight obsession with cleanliness, always tidying up his surroundings and unable to tolerate dirty environments.\n\nAlthough Lycaon maintains his elegance and composure, his canine instincts occasionally shine through. When he is particularly happy, his tail and ears unconsciously wag. He seems to be aware of this habit and somewhat bothered by it.\n\nAdditionally, like most furry Thiren, Lycaon takes great care of his fur."
     }
     },
-{
+    {
       "id": "11",
       "name": "Tsukishiro Yanagi",
-      "image": "assets/icons/tukishiro_icon.png",
-      "fullImage": "assets/images/tukishiro_full.png",
+      "image": "assets/icons/yanagi_icon.png",
+      "fullImage": "assets/images/yanagi_full.png",
       "rarity": "S",
       "attribute": "Electric",
       "specialty": "Anomaly",
@@ -1288,8 +1287,8 @@
         },
          "backstory": "Tsukishiro Yanagi was a member of the New Eridu Defense Force Obsidian Division who served during the Oni rebellion. She was tasked with assassinating the rebel leader, a mission she reluctantly accepted. Whilst making her way to the leader's hideout, she met a young Soukaku and soon saved her from an oncoming missile strike, being captured by Oni rebels in the process. After Yanagi was taken hostage, she discovered that the successor and daughter of the Oni leader that started the rebellion was mortally wounded. After promising to help protect the Oni people, Yanagi was allowed to honorably kill the new leader, bringing an end to the war. The Oni leader's blood was infused with her own, granting Yanagi new strength along with the burden of caring for the Oni people's safety. Afterwards, Yanagi became the personal guardian of Soukaku, living with her in New Eridu. As a member of the Defense Force. she collaborated with H.A.N.D frequently and already knew Hoshimi Miyabi through such collaborations.\n\nYanagi was present during the Argos Hollow incident, where she calculated the amount of casualties if the Shiyu Pillar was detonated and stated she would perform the task if Miyabi failed to defeat Lerna in three minutes. After Miyabi's victory, she, alongside H.A.N.D executive officer Asaba Harumasa, were transferred to the newly formed Hollow Special Operations Section 6 by the newly titled Void Hunter in order to expose the roots of corruption within New Eridu Yanagi later ascended to Deputy Chief, taking responsibility for both her ward and her fellow members. \n\nDuring an invitation by the Hollow Investigative Association to test out their VR system, Yanagi became crucial in saving her teammates' lives when the systems were hacked by the Proxy group Null_Face, trapping them within the virtual environment. Her perseverance and combat skill allowed her to escape the system along with her teammates."
     }
-},
-{
+  },
+  {
       "id": "12",
       "name": "Zhu Yuan",
       "image": "assets/icons/zhu_icon.png",
@@ -1409,6 +1408,7 @@
         },
          "backstory": "When Zhu Yuan was just a girl, she was trapped within a Hollow along with other civilians. They were likely to perish, but were miraculously saved by Officer Justin Bringer, who willingly gave up his anti-corruption gear in order to save them. Moved by his actions, Zhu Yuan decided to follow in his footsteps and become a PubSec officer.\n\nOnce old enough, Zhu Yuan attended the Public Security Training Academy. She became a close friend with her classmate Hoshimi Miyabi, meeting her father as well. Upon graduation, Zhu Yuan's skills and success as a PubSec officer awarded her with the title Rookie of the Year and was chosen to lead the Criminal Investigation Special Response Team, headquartered in Janus Precinct. \n\nZhu Yuan was also chosen as the face for Public Security recruitment promo videos, but her poor acting skills, refusal to break protocol and harming an extra dressed as a criminal on instinct led to the director to film her responding to a hostage situation, as a way to obtain usable footage, whilst keeping on-set footage as bloopers, much to Zhu Yuan's dismay.\n\nZhu Yuan would find herself wrapped up in a conspiracy involving her hero and his link to The Exaltists, whilst working alongside her newly-made friends Belle and Wise, revealed to be New Eridu's most wanted Phaethon. With both revelations weighing heavily on her soul."
     }
-}
+  }
+   
   ]
 }

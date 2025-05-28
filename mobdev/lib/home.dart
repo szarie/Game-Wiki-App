@@ -15,8 +15,8 @@ class _HomePageState extends State<HomePage> {
   // List of video files
   final List<String> videoFiles = [
     'assets/vids/miyabi.mp4',
-    'assets/videos/hero2.mp4',
-    'assets/videos/hero3.mp4',
+    'assets/vids/soldier0.mp4',
+    'assets/vids/vivian.mp4',
   ];
 
   int _currentCarouselIndex = 0;
